@@ -1,14 +1,7 @@
 {% block content %}
 
-<div class="row"><div class="col-sm-12">
-<div class="navbar">
-<ul class="nav navbar-nav list-inline">
-<li {% if mixture.url == "guideline-elements" %}class="active"{% endif %}><a href="/guideline-elements">Elements</a></li>
-<li {% if mixture.url == "guideline-blocs" %}class="active"{% endif %}><a href="/guideline-blocs">Blocs</a></li>
-<li {% if mixture.url == "guideline-sections" %}class="active"{% endif %}><a href="/guideline-sections">Sections</a></li>
-<li {% if mixture.url == "guideline-templates" %}class="active"{% endif %}><a href="/guideline-templates">Templates</a></li>
-</ul>
-</div></div></div>
+{% include "guideline-nav" %}
+
 
 <div class="row">
 	<div class="col-sm-6 ">
@@ -21,10 +14,7 @@
 <br/>
 <div class="row">
 <ul class="col-sm-6 list-list-unstyled">
-<li {% if mixture.url == "title" %}class="active"{% endif %}><a href="/track">Track</a></li>
-<li {% if mixture.url == "album" %}class="active"{% endif %}><a href="/album">Album</a></li>
-<li {% if mixture.url == "group" %}class="active"{% endif %}><a href="/group">Group</a></li>
-<li {% if mixture.url == "artist" %}class="active"{% endif %}><a href="/artist">Artist</a></li>
+<li {% if mixture.url == "title" %}class="active"{% endif %}><a href="/">Index</a></li>
 </ul>
 </div>
 </div>
