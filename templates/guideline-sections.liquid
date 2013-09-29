@@ -1,0 +1,119 @@
+{% block content %}
+
+<div class="navbar">
+<div class="navbar-inner">
+<ul class="nav inline">
+<li {% if mixture.url == "guideline-elements" %}class="active"{% endif %}><a href="/guideline-elements">Elements</a></li>
+<li {% if mixture.url == "guideline-blocs" %}class="active"{% endif %}><a href="/guideline-blocs">Blocs</a></li>
+<li {% if mixture.url == "guideline-sections" %}class="active"{% endif %}><a href="/guideline-sections">Sections</a></li>
+<li {% if mixture.url == "guideline-templates" %}class="active"{% endif %}><a href="/guideline-templates">Templates</a></li></ul>
+</div>
+</div>
+
+<h1>Sections</h1>
+
+<div class="accordion" id="accordion2">
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-header"><h2>Header</h2></a>
+    </div>
+    <div id="panel-header" class="accordion-body collapse">
+      <div class="accordion-inner">
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-section1"><h2>Section title</h2></a>
+    </div>
+    <div id="panel-section1" class="accordion-body collapse">
+      <div class="accordion-inner">
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  
+    <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-section2"><h2>Section title</h2></a>
+    </div>
+    <div id="panel-section2" class="accordion-body collapse">
+      <div class="accordion-inner">
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-article"><h2>Article</h2></a>
+    </div>
+    <div id="panel-article" class="accordion-body collapse">
+      <div class="accordion-inner">
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-aside"><h2>Aside</h2></a>
+    </div>
+    <div id="panel-aside" class="accordion-body collapse">
+      <div class="accordion-inner">
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>  
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-comments"><h2>Comments</h2></a>
+    </div>
+    <div id="panel-comments" class="accordion-body collapse">
+      <div class="accordion-inner">
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-footer"><h2>Footer</h2></a>
+    </div>
+    <div id="panel-footer" class="accordion-body collapse">
+      <div class="accordion-inner">
+        
+        
+        
+      </div>
+    </div>
+  </div>  
+   
+</div>
+
+
+
+{% endblock %}

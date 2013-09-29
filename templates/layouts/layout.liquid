@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}Mixture + Bootstrap{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {{ "bootstrap.css" | asset_url | stylesheet_tag }}
+
+        {{ "responsive.css" | asset_url | stylesheet_tag }}
+        {{ "style.css" | asset_url | stylesheet_tag }}
+    </head>
+    <body>
+        {% include "navigation" %}
+        <div id="content">
+        	<div class="container-fluid">
+            {% block content %}{% endblock %}
+			</div>
+        </div>
+        {% include "footer" %}
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        {{ "bootstrap.js" | asset_url | script_tag }}
+    </body>
+</html>

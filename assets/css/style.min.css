@@ -1,0 +1,5 @@
+/*!
+ * Style
+ *
+ * Copyright 2013 Audacy
+ */.product-list li:nth-child(3n+1){margin-left:0}.product-list li{margin-bottom:20px}.brands-list li:nth-child(4n+1){margin-left:0}.brands-list li{margin-bottom:40px}.philosophy-list li:nth-child(2n+1){margin-left:0}.philosophy-list li{margin-bottom:20px}header .navbar-inner{padding:0 80px}.container-fluid{padding:0 80px}.carousel-home{margin:-20px -80px 0}.carousel-caption{background-color:rgba(255,255,255,.9);bottom:100px;text-align:center}.carousel img{width:100%}.cover{-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}

@@ -1,0 +1,40 @@
+{% block content %}
+
+<div class="navbar">
+<div class="navbar-inner">
+<ul class="nav inline">
+<li {% if mixture.url == "guideline-elements" %}class="active"{% endif %}><a href="/guideline-elements">Elements</a></li>
+<li {% if mixture.url == "guideline-blocs" %}class="active"{% endif %}><a href="/guideline-blocs">Blocs</a></li>
+<li {% if mixture.url == "guideline-sections" %}class="active"{% endif %}><a href="/guideline-sections">Sections</a></li>
+<li {% if mixture.url == "guideline-templates" %}class="active"{% endif %}><a href="/guideline-templates">Templates</a></li>
+</ul>
+</div>
+</div>
+
+<div class="row-fluid">
+<div class="span6 well">
+<h2>Prototype</h2>
+<a href="/prototype" class="btn btn-large btn-primary">Naviguez dans le prototype</a>
+</div>
+
+<div class="span6 lead">
+<h1>Templates</h1>
+<br/>
+<div class="row-fluid">
+<ul class="span6 unstyled">
+<li style="margin: 10px 0;"><a href="/prototype">Accueil</a></li>
+<li style="margin: 10px 0;"><a href="/page">Page</a></li>
+<li style="margin: 10px 0;"><a href="/article">Article</a></li>
+<li style="margin: 10px 0;"><a href="/blog">Blog</a></li>
+<li style="margin: 10px 0;"><a href="/contact">Contact</a></li>
+<li style="margin: 10px 0;"><a href="/credit">Credit</a></li>
+</ul>
+<ul class="span6 unstyled">
+
+
+</ul>
+</div>
+</div>
+</div>
+<br/><br/>
+{% endblock %}

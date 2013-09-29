@@ -1,0 +1,399 @@
+{% block content %}
+
+<div class="navbar">
+<div class="navbar-inner">
+<ul class="nav inline">
+<li {% if mixture.url == "guideline-elements" %}class="active"{% endif %}><a href="/guideline-elements">Elements</a></li>
+<li {% if mixture.url == "guideline-blocs" %}class="active"{% endif %}><a href="/guideline-blocs">Blocs</a></li>
+<li {% if mixture.url == "guideline-sections" %}class="active"{% endif %}><a href="/guideline-sections">Sections</a></li>
+<li {% if mixture.url == "guideline-templates" %}class="active"{% endif %}><a href="/guideline-templates">Templates</a></li>
+</ul>
+</div>
+</div>
+
+<h1>Blocs</h1>
+
+<div class="accordion" id="accordion2">
+
+  
+  
+  
+    <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-navigation"><h2>Navigation</h2></a>
+    </div>
+    <div id="panel-navigation" class="accordion-body collapse">
+      <div class="accordion-inner">
+	  	<!--navbar-header--> 
+        <div class="row-fluid">
+        	<div class="span4 well">
+				<h3>nav header</h3>
+				<p>Text</p>
+			</div>
+			<div class="span8">
+				<div class="navbar">
+					<div class="navbar-inner">
+					<a class="brand" href="#">Title</a>
+					<ul class="nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+					</div>
+				</div>
+			</div>
+        </div>
+        <hr/>
+        <!--nav-submenu--> 
+        <div class="row-fluid">
+        	<div class="span4 well">
+				<h3>nav tabs</h3>
+				<p>Text</p>
+			</div>
+			<div class="span8">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">...</a></li>
+					<li><a href="#">...</a></li>
+				</ul>
+				
+			</div>
+        </div>
+        <hr/>
+        <!--nav-side--> 
+        <div class="row-fluid">
+        	<div class="span4 well">
+				<h3>nav side</h3>
+				<p>Text</p>
+			</div>
+			<div class="span8">
+
+  				
+  				<ul class="nav nav-list">
+  					<li class="nav-header">List header</li>
+  					<li class="active"><a href="#">Home</a></li>
+  					<li><a href="#">Library</a></li>
+  				</ul>
+			</div>
+        </div>
+        <hr/>
+		<!--nav-footer--> 
+        <div class="row-fluid">
+        	<div class="span4 well">
+				<h3>nav footer</h3>
+				<p>Text</p>
+			</div>
+			<div class="span8">
+				<ul class="nav nav-pills">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">...</a></li>
+					<li><a href="#">...</a></li>
+  				</ul>
+			</div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-blocs"><h2>Blocs</h2></a>
+    </div>
+    <div id="panel-blocs" class="accordion-body collapse">
+      <div class="accordion-inner">     
+   		<!--well--> 
+        <div class="row-fluid">
+        	<div class="span4 well">
+				<h3>Hero unit</h3>
+				<p>Text</p>
+			</div>
+			<div class="span8">
+				<div class="hero-unit">
+				<h1>Heading</h1>
+					<p>Tagline</p>
+					<p><a class="btn btn-primary btn-large">Learn more</a></p>
+				</div>
+			</div>
+        </div>
+        <hr/>
+		<!--well--> 
+        <div class="row-fluid">
+        	<div class="span4 well">
+				<h3>Page header</h3>
+				<p>Text</p>
+			</div>
+			<div class="span8">
+				<div class="page-header">
+				<h1>Example page header <small>Subtext for header</small></h1>
+				</div>
+			</div>
+        </div>
+
+		<hr/>
+		<!--well--> 
+        <div class="row-fluid">
+        	<div class="span4 well">
+				<h3>Well</h3>
+				<p>Text</p>
+			</div>
+			<div class="span8">
+				<div class="well">
+				<h4>Well</h4>
+				<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.</p>
+				<p><a class="btn btn-primary">Learn more</a></p>
+				</div>
+				<div class="well well-small">
+				<h4>Well small</h4>
+				<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.</p>
+				<p><a class="btn btn-primary">Learn more</a></p>
+				</div>
+				<div class="well well-large">
+				<h4>Well large</h4>
+				<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.</p>
+				<p><a class="btn btn-primary">Learn more</a></p>
+				</div>
+			</div>
+        </div>
+
+		<hr/>
+		<!--well--> 
+        <div class="row-fluid">
+        	<div class="span4 well">
+				<h3>Thumbnails</h3>
+				<p>Text</p>
+			</div>
+			<div class="span8">
+				<ul class="thumbnails">
+					<li class="span4">
+					<a href="#" class="thumbnail">
+					<img src="http://placehold.it/250x250" alt="">
+					</a>
+					</li>
+					<li class="span4">
+					<a href="#" class="thumbnail">
+					<img src="http://placehold.it/250x250" alt="">
+					</a>
+					</li>
+					<li class="span4">
+					<a href="#" class="thumbnail">
+					<img src="http://placehold.it/250x250" alt="">
+					</a>
+					</li>
+				</ul>
+			</div>
+        </div>
+        
+        
+        
+                
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-element"><h2>Elements</h2></a>
+    </div>
+    <div id="panel-element" class="accordion-body collapse">
+      <div class="accordion-inner">
+        
+        <!--well--> 
+        <div class="row-fluid">
+        	<div class="span4 well">
+				<h3>Element 1</h3>
+				<p>Text</p>
+			</div>
+			<div class="span8">
+				
+			</div>
+        </div>
+        
+
+        
+        
+      </div>
+    </div>
+  </div>  
+
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-call2action"><h2>Call 2 action</h2></a>
+    </div>
+    <div id="panel-call2action" class="accordion-body collapse">
+      <div class="accordion-inner">
+        
+        <!--well--> 
+        <div class="row-fluid">
+        	<div class="span4 well">
+				<h3>Call2action</h3>
+				<p>Text</p>
+			</div>
+			<div class="span8">
+				
+			</div>
+        </div>
+        
+
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-forms"><h2>Forms</h2></a>
+    </div>
+    <div id="panel-forms" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!--Form-search--> 
+        <div class="row-fluid">
+        	<div class="span4 well">
+				<h3>form search</h3>
+				<p>Text</p>
+			</div>
+			<div class="span8">
+			</div>
+        </div>
+        <hr/>
+        <!--form-newsletter--> 
+        <div class="row-fluid">
+        	<div class="span4 well">
+				<h3>form newsletter</h3>
+				<p>Text</p>
+			</div>
+			<div class="span8">
+			</div>
+        </div>
+        <hr/>
+        <!--form-contact--> 
+        <div class="row-fluid">
+        	<div class="span4 well">
+				<h3>form contact</h3>
+				<p>Text</p>
+			</div>
+			<div class="span8">
+			</div>
+        </div>        
+        
+      </div>
+    </div>
+  </div>
+ 
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-breadcrumbs"><h2>Breadcrumbs</h2></a>
+    </div>
+    <div id="panel-breadcrumbs" class="accordion-body collapse">
+      <div class="accordion-inner">
+        
+        <!--well--> 
+        <div class="row-fluid">
+        	<div class="span4 well">
+				<h3>Breadcrumbs</h3>
+				<p>Text</p>
+			</div>
+			<div class="span8">
+				<ul class="breadcrumb">
+				<li><a href="#">Home</a> <span class="divider">/</span></li>
+				<li><a href="#">Library</a> <span class="divider">/</span></li>
+				<li class="active">Data</li>
+				</ul>
+			</div>
+        </div>
+        
+
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-pagination"><h2>Pagination</h2></a>
+    </div>
+    <div id="panel-pagination" class="accordion-body collapse">
+      <div class="accordion-inner">
+        
+        <!--well--> 
+        <div class="row-fluid">
+        	<div class="span4 well">
+				<h3>Pagination</h3>
+				<p>Text</p>
+			</div>
+			<div class="span8">
+				<div class="pagination">
+				<ul>
+				<li><a href="#">Prev</a></li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">Next</a></li>
+				</ul>
+				</div>
+			</div>
+        </div>
+        <hr/>
+         <!--well--> 
+        <div class="row-fluid">
+        	<div class="span4 well">
+				<h3>Pagination</h3>
+				<p>Text</p>
+			</div>
+			<div class="span8">
+				<div class="pagination">
+				<ul class="pager">
+				<li><a href="#">Previous</a></li>
+				<li><a href="#">Next</a></li>
+				</ul>
+				</div>
+			</div>
+        </div>       
+
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-alerts"><h2>Alerts</h2></a>
+    </div>
+    <div id="panel-alerts" class="accordion-body collapse">
+      <div class="accordion-inner">
+        
+        <!--well--> 
+        <div class="row-fluid">
+        	<div class="span4 well">
+				<h3>Alerts</h3>
+				<p>Text</p>
+			</div>
+			<div class="span8">
+				<div class="alert">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					<strong>Warning!</strong> Best check yo self, you're not looking too good.
+				</div>
+			</div>
+        </div>
+        
+
+        
+        
+      </div>
+    </div>
+  </div>  
+  
+  
+</div>
+
+
+
+{% endblock %}

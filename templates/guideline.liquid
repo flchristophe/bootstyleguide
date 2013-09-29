@@ -1,0 +1,14 @@
+{% block content %}
+
+<div class="navbar">
+<div class="navbar-inner">
+<ul class="nav inline">
+<li {% if mixture.url == "guideline-elements" %}class="active"{% endif %}><a href="/guideline-elements">Elements</a></li>
+<li {% if mixture.url == "guideline-blocs" %}class="active"{% endif %}><a href="/guideline-blocs">Blocs</a></li>
+<li {% if mixture.url == "guideline-sections" %}class="active"{% endif %}><a href="/guideline-sections">Sections</a></li>
+<li {% if mixture.url == "guideline-templates" %}class="active"{% endif %}><a href="/guideline-templates">Templates</a></li>
+</ul>
+</div>
+</div>
+
+{% endblock %}
