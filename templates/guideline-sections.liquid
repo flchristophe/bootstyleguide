@@ -1,119 +1,201 @@
 {% block content %}
 
+<div class="row"><div class="col-sm-12">
 <div class="navbar">
-<div class="navbar-inner">
-<ul class="nav inline">
+<ul class="nav navbar-nav list-inline">
 <li {% if mixture.url == "guideline-elements" %}class="active"{% endif %}><a href="/guideline-elements">Elements</a></li>
 <li {% if mixture.url == "guideline-blocs" %}class="active"{% endif %}><a href="/guideline-blocs">Blocs</a></li>
 <li {% if mixture.url == "guideline-sections" %}class="active"{% endif %}><a href="/guideline-sections">Sections</a></li>
-<li {% if mixture.url == "guideline-templates" %}class="active"{% endif %}><a href="/guideline-templates">Templates</a></li></ul>
-</div>
-</div>
+<li {% if mixture.url == "guideline-templates" %}class="active"{% endif %}><a href="/guideline-templates">Templates</a></li>
+</ul>
+</div></div></div>
 
-<h1>Sections</h1>
+	<h1>Sections</h1>
 
-<div class="accordion" id="accordion2">
-  <div class="accordion-group">
-    <div class="accordion-heading">
-      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-header"><h2>Header</h2></a>
-    </div>
-    <div id="panel-header" class="accordion-body collapse">
-      <div class="accordion-inner">
-        
-        
-        
-        
-      </div>
-    </div>
-  </div>
-  
-  <div class="accordion-group">
-    <div class="accordion-heading">
-      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-section1"><h2>Section title</h2></a>
-    </div>
-    <div id="panel-section1" class="accordion-body collapse">
-      <div class="accordion-inner">
-        
-        
-        
-        
-      </div>
-    </div>
-  </div>
-  
-    <div class="accordion-group">
-    <div class="accordion-heading">
-      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-section2"><h2>Section title</h2></a>
-    </div>
-    <div id="panel-section2" class="accordion-body collapse">
-      <div class="accordion-inner">
-        
-        
-        
-        
-      </div>
-    </div>
-  </div>
-  
-  <div class="accordion-group">
-    <div class="accordion-heading">
-      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-article"><h2>Article</h2></a>
-    </div>
-    <div id="panel-article" class="accordion-body collapse">
-      <div class="accordion-inner">
-        
-        
-        
-        
-      </div>
-    </div>
-  </div>
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-header"><h2>Header</h2></a>
+		</div>
+		<div id="panel-header" class="accordion-body collapse">
+			<div class="accordion-inner">
+				<!--debut de bloc-->
+				<div class="row"> <!--début d'item-->
+					<div class="col-sm-4 ">
+						<h3>Header</h3>
+						<p>Text</p>
+					</div>
+					<div class="col-sm-8">
+						        {% include "navigation" %}
 
-
-  <div class="accordion-group">
-    <div class="accordion-heading">
-      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-aside"><h2>Aside</h2></a>
-    </div>
-    <div id="panel-aside" class="accordion-body collapse">
-      <div class="accordion-inner">
-        
-        
-        
-        
-      </div>
-    </div>
-  </div>  
-  
-  <div class="accordion-group">
-    <div class="accordion-heading">
-      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-comments"><h2>Comments</h2></a>
-    </div>
-    <div id="panel-comments" class="accordion-body collapse">
-      <div class="accordion-inner">
-        
-        
-        
-        
-      </div>
-    </div>
-  </div>
-
-  
-  <div class="accordion-group">
-    <div class="accordion-heading">
-      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-footer"><h2>Footer</h2></a>
-    </div>
-    <div id="panel-footer" class="accordion-body collapse">
-      <div class="accordion-inner">
-        
-        
-        
-      </div>
-    </div>
-  </div>  
-   
-</div>
+					</div> <!--Fin du col-sm-8-->
+					<hr/> <!--Fin d'item-->
+					<!--Fin de bloc-->
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
-{% endblock %}
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-page-header"><h2>Page-header</h2></a>
+		</div>
+		<div id="panel-page-header" class="accordion-body collapse">
+			<div class="accordion-inner">
+				<!--debut de bloc-->
+				<div class="row"> <!--début d'item-->
+					<div class="col-sm-4 ">
+						<h3>Page-header</h3>
+						<p>Text</p>
+					</div>
+					<div class="col-sm-8">
+						<div class="row">
+							<div class="span12">
+								<h1>Titre</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum.</p>
+							</div>
+						</div>
+					</div> <!--Fin du col-sm-8-->
+				</div><!--Fin de bloc-->				
+			</div>
+		</div>
+	</div>
+
+
+	
+
+	
+	<div class="accordion-group">
+		<div class="accordion-heading">
+		<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-article"><h2>Article</h2></a>
+		</div>
+					<div id="panel-article" class="accordion-body collapse">
+						<div class="accordion-inner">
+							<!--debut de bloc-->
+							<div class="row"> <!--début d'item-->
+								<div class="col-sm-4 ">
+									<h3>article</h3>
+									<p>Text</p>
+								</div>
+								<div class="col-sm-8">
+									<div class="row">
+
+										<article>
+											<header>
+												<h2>Titre de l'actualité</h2>
+												<p><small>Nom de l'auteur - 29/04/2013</small></p>
+												<p><img src="http://placehold.it/800x300"></p>
+												<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies malesuada neque vel pellentesque. Pellentesque viverra, tortor mollis rutrum placerat, quam felis luctus urna, pretium blandit lectus quam in nulla.</p>
+											</header>
+											<content>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies malesuada neque vel pellentesque.  Pellentesque viverra, tortor mollis rutrum placerat, quam felis luctus urna, pretium blandit lectus quam in nulla. Phasellus nec lorem vel nisi volutpat hendrerit. Duis eu feugiat sapien. Sed tristique tincidunt nisi, in egestas purus tempus at. Fusce at neque et elit adipiscing volutpat at vel velit. Nam malesuada interdum quam blandit tincidunt. Vestibulum ac mauris vitae lorem mollis faucibus eu vitae urna. Quisque lacus nibh, tristique quis hendrerit in, vestibulum in lorem. Vivamus malesuada, est quis </p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies malesuada neque vel pellentesque.  Pellentesque viverra, tortor mollis rutrum placerat, quam felis luctus urna, pretium blandit lectus quam in nulla. Phasellus nec lorem vel nisi volutpat hendrerit. Duis eu feugiat sapien. Sed tristique tincidunt nisi, in egestas purus tempus at. Fusce at neque et elit adipiscing volutpat at vel velit. Nam malesuada interdum quam blandit tincidunt. Vestibulum ac mauris vitae lorem mollis faucibus eu vitae urna. Quisque lacus nibh, tristique quis hendrerit in, vestibulum in lorem. Vivamus malesuada, est quis </p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies malesuada neque vel pellentesque.  Pellentesque viverra, tortor mollis rutrum placerat, quam felis luctus urna, pretium blandit lectus quam in nulla. Phasellus nec lorem vel nisi volutpat hendrerit. Duis eu feugiat sapien. Sed tristique tincidunt nisi, in egestas purus tempus at. Fusce at neque et elit adipiscing volutpat at vel velit. Nam malesuada interdum quam blandit tincidunt. Vestibulum ac mauris vitae lorem mollis faucibus eu vitae urna. Quisque lacus nibh, tristique quis hendrerit in, vestibulum in lorem. Vivamus malesuada, est quis </p>
+											</content>
+											<footer>
+												<p><small><em>Keywords : keywords, keywords, keywords, keywords</em></small></p>
+											</footer>
+										</article>
+									</div>
+
+								</div> <!--Fin du col-sm-8-->
+								<hr/> <!--Fin d'item-->
+								<!--Fin de bloc-->
+							</div>
+						</div>
+					</div>
+				</div>
+
+<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-comments"><h2>Comments</h2></a>
+					</div>
+					<div id="panel-comments" class="accordion-body collapse">
+						<div class="accordion-inner">
+							<!--debut de bloc-->
+							<div class="row"> <!--début d'item-->
+								<div class="col-sm-4 ">
+									<h3>Comments</h3>
+									<p>Text</p>
+								</div>
+								<div class="col-sm-8">
+
+								</div> <!--Fin du col-sm-8-->
+								<hr/> <!--Fin d'item-->
+								<!--Fin de bloc-->
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-aside"><h2>Aside</h2></a>
+					</div>
+					<div id="panel-aside" class="accordion-body collapse">
+						<div class="accordion-inner">
+							<!--debut de bloc-->
+							<div class="row"> <!--début d'item-->
+								<div class="col-sm-4 ">
+									<h3>Aside</h3>
+									<p>Text</p>
+								</div>
+								<div class="col-sm-8">
+									<div class="span6 ">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+										<p><a href="/acces"><img src="http://placehold.it/400x200"></a></p>
+									</div>
+								</div> <!--Fin du col-sm-8-->
+								<hr/> <!--Fin d'item-->
+								<!--Fin de bloc-->
+							</div>
+							<hr/>
+
+							<div class="row">
+								<div class="col-sm-4 ">
+									<h3>aside-blog</h3>
+									<p>Text</p>
+								</div>
+								<div class="col-sm-8">
+									<div class="span6">
+										<h3>Nos marques exclusives</h3>
+										<ul class="brands-list list-unstyled">
+											<li><a href="/marque"><img src="http://placehold.it/400x200"></a></li>
+											<li><a href="/marque"><img src="http://placehold.it/400x200"></a></li>
+											<li><a href="/marque"><img src="http://placehold.it/400x200"></a></li>
+										</ul> 
+
+									</div>	
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-footer"><h2>Footer</h2></a>
+					</div>
+					<div id="panel-footer" class="accordion-body collapse">
+						<div class="accordion-inner">
+							<!--debut de bloc-->
+							<div class="row"> <!--début d'item-->
+								<div class="col-sm-4 ">
+									<h3>Section Footer</h3>
+									<p>Text</p>
+								</div>
+								<div class="col-sm-8">
+									{% include "footer" %}
+								</div>
+								<hr/>
+								<!--Fin de bloc-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			{% endblock %}

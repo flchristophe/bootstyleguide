@@ -1,9 +1,19 @@
-{% block content %}	
-<h1>Site internet Essere</h1>
-		<br/>
-		<p>Projet développé sur Bootstrap (v2.3.1).</p>
-		<br/>
-		<p>Todays date: {{ 'now' | date: "%d %B %Y" }}. Model created: {{ modelDate | date: "%d %B %Y" }}</p>
-		<br/>
-		<p><a class="btn btn-primary btn-large" href="/guideline">Guideline</a> - <a class="btn btn-primary btn-large" href="/prototype">Prototype</a></p>
+{% block content %}
+<div class="row">
+	<div class="col-sm-6">
+		<div class="hero-unit">
+			<h1>Titre du projet</h1>
+			<p>Projet développé sur Bootstrap (v3.0.0).</p>
+			<p>Todays date: {{ 'now' | date: "%d %B %Y" }}. Model created: {{ modelDate | date: "%d %B %Y" }}</p>
+			<p><a class="btn btn-primary btn-large" href="/guideline">Guideline</a> - <a class="btn btn-primary btn-large" href="/prototype">Prototype</a></p>
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<h1>Templates</h1>
+			<ul class="list-unstyled">
+			<li {% if mixture.url == "index" %}class="active"{% endif %}><a href="/track">index</a></li>
+
+		</ul>
+     </div>
+</div>
 {% endblock %}

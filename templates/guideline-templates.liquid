@@ -1,37 +1,30 @@
 {% block content %}
 
+<div class="row"><div class="col-sm-12">
 <div class="navbar">
-<div class="navbar-inner">
-<ul class="nav inline">
+<ul class="nav navbar-nav list-inline">
 <li {% if mixture.url == "guideline-elements" %}class="active"{% endif %}><a href="/guideline-elements">Elements</a></li>
 <li {% if mixture.url == "guideline-blocs" %}class="active"{% endif %}><a href="/guideline-blocs">Blocs</a></li>
 <li {% if mixture.url == "guideline-sections" %}class="active"{% endif %}><a href="/guideline-sections">Sections</a></li>
 <li {% if mixture.url == "guideline-templates" %}class="active"{% endif %}><a href="/guideline-templates">Templates</a></li>
 </ul>
-</div>
+</div></div></div>
+
+<div class="row">
+	<div class="col-sm-6 ">
+		<h2>Prototype</h2>
+		<a href="/prototype" class="btn btn-large btn-primary">Naviguez dans le prototype</a>
 </div>
 
-<div class="row-fluid">
-<div class="span6 well">
-<h2>Prototype</h2>
-<a href="/prototype" class="btn btn-large btn-primary">Naviguez dans le prototype</a>
-</div>
-
-<div class="span6 lead">
+<div class="col-sm-6 lead">
 <h1>Templates</h1>
 <br/>
-<div class="row-fluid">
-<ul class="span6 unstyled">
-<li style="margin: 10px 0;"><a href="/prototype">Accueil</a></li>
-<li style="margin: 10px 0;"><a href="/page">Page</a></li>
-<li style="margin: 10px 0;"><a href="/article">Article</a></li>
-<li style="margin: 10px 0;"><a href="/blog">Blog</a></li>
-<li style="margin: 10px 0;"><a href="/contact">Contact</a></li>
-<li style="margin: 10px 0;"><a href="/credit">Credit</a></li>
-</ul>
-<ul class="span6 unstyled">
-
-
+<div class="row">
+<ul class="col-sm-6 list-list-unstyled">
+<li {% if mixture.url == "title" %}class="active"{% endif %}><a href="/track">Track</a></li>
+<li {% if mixture.url == "album" %}class="active"{% endif %}><a href="/album">Album</a></li>
+<li {% if mixture.url == "group" %}class="active"{% endif %}><a href="/group">Group</a></li>
+<li {% if mixture.url == "artist" %}class="active"{% endif %}><a href="/artist">Artist</a></li>
 </ul>
 </div>
 </div>
