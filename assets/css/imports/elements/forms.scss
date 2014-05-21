@@ -1,0 +1,28 @@
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {}
+
+label {}
+input[type="text"] {}
+input[type="text-area"] {}
+input[type="text"] .search-query {}
+button[type="subit"] {}
+label.checkbox {}
+input[type="checkbox"] {}
+label.radio {}
+input[type="radio"] {}
+select {}
+textarea {}
+input[type="password"] {}
+input[type="datetime"]{}
+input[type="datetime-local"] {}
+input[type="date"] {}
+input[type="month"] {}
+input[type="time"] {}
+input[type="week"] {}
+input[type="number"] {}
+input[type="email"] {}
+input[type="url"] {}
+input[type="search"] {}
+input[type="tel"] {}
+input[type="color"] {}
+.uneditable-input {}

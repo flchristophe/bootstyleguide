@@ -1,0 +1,21 @@
+{% block content %}
+  {% include "layout/navigation" %}
+  <div class="container">
+	  	<div class="row">
+	  		<div class="col-sm-8">
+		  	<ul class="list-unstyled blog">
+			  	{% include "blog/post-excerpt" %}
+			  	{% include "blog/post-excerpt" %}
+			  	{% include "blog/post-excerpt" %}
+			  	{% include "blog/post-excerpt" %}
+			  	{% include "blog/post-excerpt" %}
+		  	</ul>
+		  	{% include "blog/post-nav" %}
+	  	</div>
+	  	 <div class="col-sm-4">
+	  	 	{% include "sidebar/sidebar" %}
+	  	 </div>		
+	 </div>
+	 </div>
+	 {% include "layout/footer" %}
+	 {% endblock %}

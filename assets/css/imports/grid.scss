@@ -1,0 +1,41 @@
+body {
+	@media (min-width: 480px) {
+
+	}
+	@media (min-width: 600px) {
+	
+	}
+	@media (min-width: 768px) { 
+
+	}
+	@media (min-width: 992px) { 
+
+ 	}
+	@media (min-width: 1200px) {
+
+	}
+	@media (max-width: 1200px) {
+
+	}
+	@media (max-width: 991px) {
+
+	}
+	@media (max-width: 767px) {
+
+	}
+	@media (max-width: 599px) {
+
+	}
+	@media (max-width: 479px) {
+
+	}
+}
+
+.container{
+	margin: 0 40px;
+	max-width: 1200px;
+}
+.row {}
+.row [class*="span"] {
+	&:first-child {}
+}

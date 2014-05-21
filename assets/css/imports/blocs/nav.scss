@@ -1,0 +1,56 @@
+.nav {
+	li {
+		a {
+			&:hover {}
+		}
+		&.active {
+			a {
+				&:hover {}
+			}
+		}
+	}
+}
+
+.nav-list {
+	li {
+		a {
+			&:hover {}
+		}
+		&.active {
+			a {
+				&:hover {}
+			}
+		}
+	}
+}
+
+.nav-pills {
+	li {
+		a {
+			&:hover {}
+		}
+		&.active {
+			a {
+				&:hover {}
+			}
+		}
+	}
+}
+
+.navbar {
+	.navbar-brand {}
+	.navbar-inner {
+		.nav {
+			li {
+				a {
+					&:hover {}
+				}
+				&.active {
+					a {
+						&:hover {}
+					}
+				}
+			}
+		}
+	}
+}

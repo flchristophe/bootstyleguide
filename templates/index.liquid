@@ -1,19 +1,25 @@
+
 {% block content %}
+<div class="container">
 <div class="row">
 	<div class="col-sm-6">
 		<div class="hero-unit">
 			<h1>Titre du projet</h1>
-			<p>Projet développé sur Bootstrap (v3.0.0).</p>
+			<p>Projet développé sur Bootstrap (v3.1.0).</p>
 			<p>Todays date: {{ 'now' | date: "%d %B %Y" }}. Model created: {{ modelDate | date: "%d %B %Y" }}</p>
-			<p><a class="btn btn-primary btn-large" href="/guideline">Guideline</a> - <a class="btn btn-primary btn-large" href="/prototype">Prototype</a></p>
+			<p><a class="btn btn-primary btn-large" href="guideline/guideline">Guideline</a></p>
 		</div>
 	</div>
 	<div class="col-sm-6">
 		<h1>Templates</h1>
 			<ul class="list-unstyled">
-			<li {% if mixture.url == "index" %}class="active"{% endif %}><a href="/">index</a></li>
-
+			<li {% if mixture.url == "index" %}class="active"{% endif %}><a href="desktop/index">Home</a></li>
+			<li {% if mixture.url == "blog" %}class="active"{% endif %}><a href="desktop/blog">Blog</a></li>
+			<li {% if mixture.url == "article" %}class="active"{% endif %}><a href="desktop/article">Article</a></li>
+			<li {% if mixture.url == "page" %}class="active"{% endif %}><a href="desktop/page">Page</a></li>
+			<li {% if mixture.url == "credit" %}class="active"{% endif %}><a href="desktop/credit">Credit</a></li>
 		</ul>
      </div>
+</div>
 </div>
 {% endblock %}

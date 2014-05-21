@@ -1,0 +1,51 @@
+.btn {
+	&:hover{}
+}
+.btn-large {
+	&:hover{}
+}
+.btn-small {
+	&:hover{}
+}
+.btn-block {
+	&:hover{}
+}
+
+.btn-primary {
+	background-color: #FF0000; 
+	border: none; 
+	color: #fff;
+
+	&:hover{
+		background-color: #333; 
+		border: none; 
+		color: #fff;
+	}
+}
+
+.btn-secondary {
+	background-color: #00FF00; 
+	border: none;  
+	color: #fff;
+
+	&:hover{
+		background-color: #333; 
+		border: none; 
+		color: #fff;
+	}
+}
+
+.btn-third {
+	background-color: #0000FF;
+	border: none;
+	color: #fff;
+
+	&:hover{
+		background-color: #333; 
+		border: none; 
+		color: #fff;
+	}
+}
+.btn.close {
+	&:hover{}
+}

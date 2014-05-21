@@ -1,0 +1,14 @@
+{% block content %}
+  {% include "layout/navigation" %}
+    <div class="container">
+		<div class="row-fluid">
+			<div class="col-sm-8">
+		  		{% include "blog/post" %}
+	  	 </div>
+	  	 <div class="col-sm-4">
+	  	 	{% include "sidebar/sidebar" %}
+	  	 </div>
+	 </div>
+	</div>
+	 {% include "layout/footer" %}
+{% endblock %}

@@ -1,0 +1,22 @@
+.pagination {
+	ul{
+		li {
+			&:hover {}
+			&:first-child {}
+			&:last-child {}
+			a {
+				&:hover {}
+			}
+		}
+	}
+}
+.pager{
+	li {
+		&:hover {}
+		&:first-child {}
+		&:last-child {}
+		a {
+			&:hover {}
+		}
+	}
+}	
