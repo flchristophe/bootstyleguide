@@ -2,51 +2,42 @@
 {% block content %}
 {% include "bootstyleguide/icons" %}
 <div class="bsg-header">
-<div class="container">
 	<div class="row">
-		<div class="col-sm-4 text-left">
+		<div class="col-xs-4 col-sm-3 text-left">
 			<P>Projet</p>
 		</div>
-		<div class="col-sm-4 text-center">
+		<div class="col-xs-4 col-sm-6 text-center">
 			
-			<p>Todays date: {{ 'now' | date: "%d %B %Y" }}. Model created: {{ modelDate | date: "%d %B %Y" }}</p>
+			<p>{{ 'now' | date: "%d %B %Y" }}</p>
 		</div>
-		<div class="col-sm-4 text-right">
+		<div class="col-xs-4 col-sm-3 text-right">
 			<p>Bootstrap (v3.1.0).</p>
 		</div>
 	</div>
 </div>
-</div>
 <div class="bsg-nav">
-	<div class="row bsg-list">
+	<div class="bsg-list">
 		<div class="bsg-element">
-			<h1>Guideline</h1>
+			<h2>Guideline</h2>
 			<svg class="icon-bsg icon-book" viewBox="0 0 32 32"><use xlink:href="#icon-book"></use></svg>
 			<p><a class="btn btn-primary btn-large" href="guideline/guideline">Guideline</a></p>
 		</div>
 		<div class="bsg-element">
-			<h1>Desktop</h1>
+			<h2>Desktop</h2>
 			<svg class="icon-bsg icon-browser" viewBox="0 0 32 32"><use xlink:href="#icon-browser"></use></svg>
 			<p><a class="btn btn-primary btn-large" href="desktop/index">Website</a></p>
-			
     	</div>
     	<div class="bsg-element inactive">
-			<h1>Mobile</h1>
+			<h2>Mobile</h2>
 			<svg class="icon-bsg icon-mobile" viewBox="0 0 32 32"><use xlink:href="#icon-mobile"></use></svg>
-
-			
 		</div>
 		<div class="bsg-element inactive">
-			<h1>Tablet</h1>
+			<h2>Tablet</h2>
 			<svg class="icon-bsg icon-landscape" viewBox="0 0 32 32"><use xlink:href="#icon-landscape"></use></svg>
-		
-			
 		</div>
 		<div class="bsg-element inactive">
-			<h1>Email</h1>
+			<h2>Email</h2>
 			<svg class="icon-bsg icon-mail" viewBox="0 0 32 32"><use xlink:href="#icon-mail"></use></svg>
-			
-			
 		</div>
 	</div>
 </div>

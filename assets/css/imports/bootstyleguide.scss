@@ -1,17 +1,40 @@
-.bsg-header {background: #000; color: #fff; padding : 20px;}
+.bsg-header {
+	background: #000; 
+	color: #fff; 
+	padding : 10px 20px 5px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index:10;
+	.navbar-toggle {
+	padding: 0;
+	border-radius: 0;
+	}
+	.navbar-toggle .icon-bar {
+	background: #FFF; 
+	}
+}
+.bsg-header .navbar-nav>li>a {padding: 5px 10px;}
+.bsg-header .navbar-nav>li>a:hover {background: none;}
 .bsg-nav {
+	height: 100%;
+	position: relative;
+	top: 45px;
+	bottom: 0;
+	background: #333;
+	@media (min-width: 768px) {position: fixed;}
 	.bsg-list {
+		height: 100%;
 		.bsg-element {
 			background: #eee; 
-			height: 300px;
 			padding: 20px;
 			width: 50%;
+			height: 100%;
 			float: left;
 			text-align: center;
-			display: block;
-
 			&:hover{background: #ddd;}
-			@media (min-width: 768px) {width: 20%; height: 500px;}
+			@media (min-width: 768px) {width: 20%;}
 			&.inactive {
 				background: #333;
 				&:hover {background: #333;}
@@ -25,23 +48,40 @@
 	margin: 0 auto; 
 	opacity: 0.2;
 }
-.bsg-footer {background: #000; color: #fff; padding : 20px;}
-
+.bsg-footer {
+	background: #000;
+	color: #fff; 
+	padding : 10px 20px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index:10;
+}
 .bsg-left {
 	width: 30%;
 	float: left;
 	background: #eee;
+	position: fixed;
+	top: 0px;
+	bottom: 0;
+	left: 0;
+	padding-top: 45px;
+	z-index:5;
 	@media (min-width: 768px) {width: 15%;}
 }
 .bsg-left.nav-tabs>li>a {border: none;}
-
 .bsg-left.nav-tabs>li.active>a {border: none; border-radius: 0;}
 .bsg-left.nav-tabs>li>a:hover {border: none;}
-
 .bsg-right {
 	width: 70%;
 	float: right;
-	padding: 10px; 
+	padding: 50px 10px 0; 
 	@media (min-width: 768px) {width: 85%;}
-
+}
+.bsg-title {
+	width: 100%;
+	border-bottom: 1px dashed #ccc;
+	padding: 5px 0;
+	margin: 30px 0;
 }

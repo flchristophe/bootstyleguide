@@ -1,80 +1,35 @@
 {% block content %}
-
 {% include "guideline/navigation" %}
-
-<h1>Blocs</h1>
-<div class="accordion" id="accordion2">
-	<div class="accordion-group">
-		<div class="accordion-heading">
-			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-navigation"><h2>Navigation</h2></a>
-		</div>
-		<div id="panel-navigation" class="accordion-body collapse">
-			<div class="accordion-inner">
-				{% include "guideline/blocs/navigation" %}
-			</div>
-		</div>
-	</div>
-	<div class="accordion-group">
-		<div class="accordion-heading">
-			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-blocs"><h2>Blocs</h2></a>
-		</div>
-		<div id="panel-blocs" class="accordion-body collapse">
-			<div class="accordion-inner">
-				{% include "guideline/blocs/blocs" %}
-			</div>
-		</div>
-	</div>
-	<div class="accordion-group">
-		<div class="accordion-heading">
-			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-call2action"><h2>Call 2 action</h2></a>
-		</div>
-		<div id="panel-call2action" class="accordion-body collapse">
-			<div class="accordion-inner">
-				{% include "guideline/blocs/call2action" %}
-			</div>
-		</div>
-	</div>
-	<div class="accordion-group">
-		<div class="accordion-heading">
-			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-forms"><h2>Forms</h2></a>
-		</div>
-		<div id="panel-forms" class="accordion-body collapse">
-			<div class="accordion-inner">
-				{% include "guideline/blocs/forms" %}
-			</div>
-		</div>
-	</div>
-	<div class="accordion-group">
-		<div class="accordion-heading">
-			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-breadcrumbs"><h2>Breadcrumbs</h2></a>
-		</div>
-		<div id="panel-breadcrumbs" class="accordion-body collapse">
-			<div class="accordion-inner">
-				{% include "guideline/blocs/breadcrumbs" %}
-			</div>
-		</div>
-	</div>
-	<div class="accordion-group">
-		<div class="accordion-heading">
-			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-pagination"><h2>Pagination</h2></a>
-		</div>
-		<div id="panel-pagination" class="accordion-body collapse">
-			<div class="accordion-inner">
-				{% include "guideline/blocs/pagination" %}
-			</div>
-		</div>
-	</div>
-	<div class="accordion-group">
-		<div class="accordion-heading">
-			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-alerts"><h2>Alerts</h2></a>
-		</div>
-		<div id="panel-alerts" class="accordion-body collapse">
-			<div class="accordion-inner">
-				{% include "guideline/blocs/alerts" %}
-			</div>
-		</div>
-	</div>  
-</div>
-</div>
+<ul class="nav nav-tabs nav-stacked bsg-left">
+  <li class="active"><a href="#navigation" data-toggle="tab">Navigation</a></li>
+  <li><a href="#blocs" data-toggle="tab">Blocs</a></li>
+  <li><a href="#call2action" data-toggle="tab">Call 2 action</a></li>
+  <li><a href="#forms" data-toggle="tab">Forms</a></li>
+  <li><a href="#breadcrumbs" data-toggle="tab">Breadcrumbs</a></li>
+  <li><a href="#pagination" data-toggle="tab">Pagination</a></li>
+   <li><a href="#alerts" data-toggle="tab">Alerts</a></li>
+</ul>
+<div class="tab-content bsg-right">
+  <div class="tab-pane active" id="navigation">
+   {% include "guideline/blocs/navigation" %}
+  </div>
+  <div class="tab-pane" id="blocs">
+     {% include "guideline/blocs/blocs" %}
+  </div>
+  <div class="tab-pane" id="call2action">
+     {% include "guideline/blocs/call2action" %}
+  </div>
+  <div class="tab-pane" id="forms">
+     {% include "guideline/blocs/forms" %}
+  </div>
+  <div class="tab-pane" id="breadcrumbs">
+     {% include "guideline/blocs/breadcrumbs" %}
+  </div>
+  <div class="tab-pane" id="pagination">
+     {% include "guideline/blocs/pagination" %}
+  </div>
+  <div class="tab-pane" id="alerts">
+    {% include "guideline/blocs/alerts" %}
+  </div>
 </div>
 {% endblock %}

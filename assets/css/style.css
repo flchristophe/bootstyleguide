@@ -7,26 +7,51 @@
 .bsg-header {
   background: #000;
   color: #fff;
-  padding: 20px; }
+  padding: 10px 20px 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; }
+  .bsg-header .navbar-toggle {
+    padding: 0;
+    border-radius: 0; }
+  .bsg-header .navbar-toggle .icon-bar {
+    background: #FFF; }
 
-.bsg-nav .bsg-list .bsg-element {
-  background: #eee;
-  height: 300px;
-  padding: 20px;
-  width: 50%;
-  float: left;
-  text-align: center;
-  display: block; }
-  .bsg-nav .bsg-list .bsg-element:hover {
-    background: #ddd; }
+.bsg-header .navbar-nav > li > a {
+  padding: 5px 10px; }
+
+.bsg-header .navbar-nav > li > a:hover {
+  background: none; }
+
+.bsg-nav {
+  height: 100%;
+  position: relative;
+  top: 45px;
+  bottom: 0;
+  background: #333; }
   @media (min-width: 768px) {
+    .bsg-nav {
+      position: fixed; } }
+  .bsg-nav .bsg-list {
+    height: 100%; }
     .bsg-nav .bsg-list .bsg-element {
-      width: 20%;
-      height: 500px; } }
-  .bsg-nav .bsg-list .bsg-element.inactive {
-    background: #333; }
-    .bsg-nav .bsg-list .bsg-element.inactive:hover {
-      background: #333; }
+      background: #eee;
+      padding: 20px;
+      width: 50%;
+      height: 100%;
+      float: left;
+      text-align: center; }
+      .bsg-nav .bsg-list .bsg-element:hover {
+        background: #ddd; }
+      @media (min-width: 768px) {
+        .bsg-nav .bsg-list .bsg-element {
+          width: 20%; } }
+      .bsg-nav .bsg-list .bsg-element.inactive {
+        background: #333; }
+        .bsg-nav .bsg-list .bsg-element.inactive:hover {
+          background: #333; }
 
 .icon-bsg {
   width: 50%;
@@ -37,12 +62,23 @@
 .bsg-footer {
   background: #000;
   color: #fff;
-  padding: 20px; }
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; }
 
 .bsg-left {
   width: 30%;
   float: left;
-  background: #eee; }
+  background: #eee;
+  position: fixed;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  padding-top: 45px;
+  z-index: 5; }
   @media (min-width: 768px) {
     .bsg-left {
       width: 15%; } }
@@ -60,10 +96,16 @@
 .bsg-right {
   width: 70%;
   float: right;
-  padding: 10px; }
+  padding: 50px 10px 0; }
   @media (min-width: 768px) {
     .bsg-right {
       width: 85%; } }
+
+.bsg-title {
+  width: 100%;
+  border-bottom: 1px dashed #ccc;
+  padding: 5px 0;
+  margin: 30px 0; }
 
 .container {
   margin: 0 40px;
