@@ -3,7 +3,6 @@
 {% include "guideline/navigation" %}
 
 <h1>Blocs</h1>
-
 <div class="accordion" id="accordion2">
 	<div class="accordion-group">
 		<div class="accordion-heading">
@@ -11,421 +10,71 @@
 		</div>
 		<div id="panel-navigation" class="accordion-body collapse">
 			<div class="accordion-inner">
-				<!--navbar-header--> 
-				<div class="row">
-					<div class="col-sm-4 ">
-						<h3>nav header</h3>
-						<p>Text</p>
-					</div>
-					<div class="col-sm-8">
-						<div class="navbar">
-							<div class="navbar-inner">
-								<a class="brand" href="#">Title</a>
-								<ul class="nav">
-									<li class="active"><a href="#">Home</a></li>
-									<li><a href="#">Link</a></li>
-									<li><a href="#">Link</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<hr/>
-				<!--nav-submenu--> 
-				<div class="row">
-					<div class="col-sm-4 ">
-						<h3>nav tabs</h3>
-						<p>Text</p>
-					</div>
-					<div class="col-sm-8">
-						<ul class="nav nav-tabs">
-							<li class="active"><a href="#">Home</a></li>
-							<li><a href="#">...</a></li>
-							<li><a href="#">...</a></li>
-						</ul>
-
-					</div>
-				</div>
-				<hr/>
-				<!--nav-side--> 
-				<div class="row">
-					<div class="col-sm-4 ">
-						<h3>nav side</h3>
-						<p>Text</p>
-					</div>
-					<div class="col-sm-8">
-
-
-						<ul class="nav nav-list">
-							<li class="nav-header">List header</li>
-							<li class="active"><a href="#">Home</a></li>
-							<li><a href="#">Library</a></li>
-						</ul>
-					</div>
-				</div>
-				<hr/>
-				<!--nav-footer--> 
-				<div class="row">
-					<div class="col-sm-4 ">
-						<h3>nav footer</h3>
-						<p>Text</p>
-					</div>
-					<div class="col-sm-8">
-						<ul class="list-unstyled list-inline">
-							<li><a href="/acces">Lorem ipsum</a></li>
-							<li><a href="/contact">Lorem ipsum</a></li>
-							<li><a href="/credit">Lorem ipsum</a></li>
-						</ul>
-					</div>
-				</div>
-
+				{% include "guideline/blocs/navigation" %}
 			</div>
 		</div>
 	</div>
-
 	<div class="accordion-group">
 		<div class="accordion-heading">
 			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-blocs"><h2>Blocs</h2></a>
 		</div>
 		<div id="panel-blocs" class="accordion-body collapse">
 			<div class="accordion-inner">
-				<!----> 
-				<div class="row">
-					<div class="col-sm-4 ">
-						<h3>Hero unit</h3>
-						<p>Text</p>
-					</div>
-					<div class="col-sm-8">
-						<div class="hero-unit">
-							<h1>Heading</h1>
-							<p>Tagline</p>
-							<p><a class="btn btn-primary btn-lg">Learn more</a></p>
-						</div>
-					</div>
-				</div>
-				<hr/>
-
-
-				<div class="row">
-					<div class="col-sm-4 ">
-						<h3></h3>
-						<p>Text</p>
-					</div>
-					<div class="col-sm-8">
-						<div class="">
-							<h4></h4>
-							<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.</p>
-							<p><a class="btn btn-primary">Learn more</a></p>
-						</div>
-						<div class=" -sm">
-							<h4> small</h4>
-							<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.</p>
-							<p><a class="btn btn-primary">Learn more</a></p>
-						</div>
-						<div class=" -lg">
-							<h4> large</h4>
-							<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.</p>
-							<p><a class="btn btn-primary">Learn more</a></p>
-						</div>
-					</div>
-				</div>
-				<hr/>
-				<div class="row">
-					<div class="col-sm-4 ">
-						<h3>Thumbnails</h3>
-						<p>Text</p>
-					</div>
-					<div class="col-sm-8">
-						<ul class="thumbnails">
-							<li class="col-sm-4">
-								<a href="#" class="thumbnail">
-									<img src="http://placehold.it/250x250" alt="">
-								</a>
-							</li>
-							<li class="col-sm-4">
-								<a href="#" class="thumbnail">
-									<img src="http://placehold.it/250x250" alt="">
-								</a>
-							</li>
-							<li class="col-sm-4">
-								<a href="#" class="thumbnail">
-									<img src="http://placehold.it/250x250" alt="">
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<hr/>
-				
-				<!--bloc text--> 
-				<div class="row">
-					<div class="col-sm-4 ">
-						<h3>Bloc text</h3>
-						<p>Text</p>
-					</div>
-					<div class="col-sm-8">
-						<h2>diam eget risus varius blandit sit amet</h2>
-						<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus.</p>
-
-						<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum.</p>
-
-					</div>
-				</div>
-				<hr/>
-
-				<!--news--> 
-				<div class="row">
-					<div class="col-sm-4 ">
-						<h3>article-list-item</h3>
-						<p>Text</p>
-					</div>
-					<div class="col-sm-8">
-						<ul class="list-unstyled blog">
-						<li>
-					<div>
-					<h2>Titre de l'actualité</h2>
-					<p><small>Nom de l'auteur - 29/04/2013</small></p>
-					<p><a href="/article"><img src="http://placehold.it/800x300"></a></p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eros felis, hendrerit a vulputate nec, sodales nec nunc. Aenean euismod, diam et venenatis blandit, nunc hendrerit a vulputate nec, sodales nec nunc. Aenean euismod, diam et venenatis blandit, consectetur adipiscing elit. Nulla eros felis, hendrerit a vulputate nec, sodales nec nunc. Aenean euismod</p>
-					<a href="/article" class="btn btn-small">Lire</a>
-				</div>
-				</li>
-				</ul>
-					
-					</div>
-				</div>
-				<hr/>
-			<div class="row">
-				<div class="col-sm-4 ">
-					<h3>tags-list</h3>
-					<p>Text</p>
-				</div>
-				<div class="col-sm-8">
-					<footer>
-						<p><small><em>Keywords : keywords, keywords, keywords, keywords</em></small></p>
-					</footer>
-				</div>
+				{% include "guideline/blocs/blocs" %}
 			</div>
-
-
-
-			</div>
-			</div>
-			</div>
-
-
-
-			<div class="accordion-group">
-				<div class="accordion-heading">
-					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-call2action"><h2>Call 2 action</h2></a>
-				</div>
-				<div id="panel-call2action" class="accordion-body collapse">
-					<div class="accordion-inner">
-
-						<!----> 
-						<div class="row">
-							<div class="col-sm-4 ">
-								<h3>Call2action</h3>
-								<p>Text</p>
-							</div>
-							<div class="col-sm-8">
-							
-							Call2action
-		
-							</div>
-						</div>
-
-
-
-
-					</div>
-				</div>
-			</div>
-
-
-			<div class="accordion-group">
-				<div class="accordion-heading">
-					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-forms"><h2>Forms</h2></a>
-				</div>
-				<div id="panel-forms" class="accordion-body collapse">
-					<div class="accordion-inner">
-
-						<!--Form-search--> 
-						<div class="row">
-							<div class="col-sm-4 ">
-								<h3>form search</h3>
-								<p>Text</p>
-							</div>
-							<div class="col-sm-8">
-								<form class="form-search">
-									<div class="input-append">
-										<input type="text" class="span2 search-query">
-										<button type="submit" class="btn">Search</button>
-									</div>
-									<div class="input-prepend">
-										<button type="submit" class="btn">Search</button>
-										<input type="text" class="span2 search-query">
-									</div>
-								</form>
-							</div>
-						</div>
-						<hr/>
-						<!--form-newsletter--> 
-						<div class="row">
-							<div class="col-sm-4 ">
-								<h3>form newsletter</h3>
-								<p>Text</p>
-							</div>
-							<div class="col-sm-8">
-								<form>
-									<fieldset>
-										<legend>Legend</legend>
-										<label>Label name</label>
-										<input type="text" placeholder="Type something…">
-										<span class="help-block">Example block-level help text here.</span>
-										<label class="checkbox">
-											<input type="checkbox"> Check me out
-										</label>
-										<button type="submit" class="btn">Submit</button>
-									</fieldset>
-								</form>
-							</div>
-						</div>
-						<hr/>
-						<!--form-contact--> 
-						<div class="row">
-							<div class="col-sm-4 ">
-								<h3>form contact</h3>
-								<p>Text</p>
-							</div>
-							<div class="col-sm-8">
-								<form class="form-horizontal">
-									<div class="control-group">
-										<label class="control-label" for="inputEmail">Email</label>
-										<div class="controls">
-											<input type="text" id="inputEmail" placeholder="Email">
-										</div>
-									</div>
-									<div class="control-group">
-										<label class="control-label" for="inputPassword">Password</label>
-										<div class="controls">
-											<input type="password" id="inputPassword" placeholder="Password">
-										</div>
-									</div>
-									<div class="control-group">
-										<div class="controls">
-											<label class="checkbox">
-												<input type="checkbox"> Remember me
-											</label>
-											<button type="submit" class="btn">Sign in</button>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>        
-
-					</div>
-				</div>
-			</div>
-			<div class="accordion-group">
-				<div class="accordion-heading">
-					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-breadcrumbs"><h2>Breadcrumbs</h2></a>
-				</div>
-				<div id="panel-breadcrumbs" class="accordion-body collapse">
-					<div class="accordion-inner">
-
-						<!----> 
-						<div class="row">
-							<div class="col-sm-4 ">
-								<h3>Breadcrumbs</h3>
-								<p>Text</p>
-							</div>
-							<div class="col-sm-8">
-								<ol class="breadcrumb">
-									<li><a href="#">Home</a></li>
-									<li><a href="#">Library</a></li>
-									<li class="active">Data</li>
-								</ol>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="accordion-group">
-				<div class="accordion-heading">
-					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-pagination"><h2>Pagination</h2></a>
-				</div>
-				<div id="panel-pagination" class="accordion-body collapse">
-					<div class="accordion-inner">
-
-						<!----> 
-						<div class="row">
-							<div class="col-sm-4 ">
-								<h3>Pagination</h3>
-								<p>Text</p>
-							</div>
-							<div class="col-sm-8">
-								<div >
-									<ul class="pagination">
-										<li><a href="#">Prev</a></li>
-										<li><a href="#">1</a></li>
-										<li><a href="#">2</a></li>
-										<li><a href="#">3</a></li>
-										<li><a href="#">4</a></li>
-										<li><a href="#">5</a></li>
-										<li><a href="#">Next</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<hr/>
-						<!----> 
-						<div class="row">
-							<div class="col-sm-4 ">
-								<h3>Pagination</h3>
-								<p>Text</p>
-							</div>
-							<div class="col-sm-8">
-								<div class="pagination">
-									<ul class="pager">
-										<li><a href="#">Previous</a></li>
-										<li><a href="#">Next</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>       
-					</div>
-				</div>
-			</div>
-			<div class="accordion-group">
-				<div class="accordion-heading">
-					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-alerts"><h2>Alerts</h2></a>
-				</div>
-				<div id="panel-alerts" class="accordion-body collapse">
-					<div class="accordion-inner">
-
-						<!----> 
-						<div class="row">
-							<div class="col-sm-4 ">
-								<h3>Alerts</h3>
-								<p>Text</p>
-							</div>
-							<div class="col-sm-8">
-								<p class="muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
-								<p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
-								<p class="text-error">Donec ullamcorper nulla non metus auctor fringilla.</p>
-								<p class="text-info">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.</p>
-								<p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>  
 		</div>
 	</div>
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-call2action"><h2>Call 2 action</h2></a>
+		</div>
+		<div id="panel-call2action" class="accordion-body collapse">
+			<div class="accordion-inner">
+				{% include "guideline/blocs/call2action" %}
+			</div>
+		</div>
+	</div>
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-forms"><h2>Forms</h2></a>
+		</div>
+		<div id="panel-forms" class="accordion-body collapse">
+			<div class="accordion-inner">
+				{% include "guideline/blocs/forms" %}
+			</div>
+		</div>
+	</div>
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-breadcrumbs"><h2>Breadcrumbs</h2></a>
+		</div>
+		<div id="panel-breadcrumbs" class="accordion-body collapse">
+			<div class="accordion-inner">
+				{% include "guideline/blocs/breadcrumbs" %}
+			</div>
+		</div>
+	</div>
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-pagination"><h2>Pagination</h2></a>
+		</div>
+		<div id="panel-pagination" class="accordion-body collapse">
+			<div class="accordion-inner">
+				{% include "guideline/blocs/pagination" %}
+			</div>
+		</div>
+	</div>
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#panel-alerts"><h2>Alerts</h2></a>
+		</div>
+		<div id="panel-alerts" class="accordion-body collapse">
+			<div class="accordion-inner">
+				{% include "guideline/blocs/alerts" %}
+			</div>
+		</div>
+	</div>  
 </div>
-
-
-
+</div>
+</div>
 {% endblock %}
