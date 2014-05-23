@@ -1,47 +1,53 @@
 {% block content %}
 {% include "guideline/navigation" %}
-<ul class="nav nav-tabs nav-stacked bsg-left">
-  <li class="active"><a href="#textes" data-toggle="tab">Textes</a></li>
-  <li><a href="#colors" data-toggle="tab">Colors</a></li>
-  <li><a href="#backgrounds" data-toggle="tab">Backgrounds</a></li>
-  <li><a href="#lists" data-toggle="tab">Lists</a></li>
-  <li><a href="#buttons" data-toggle="tab">Buttons</a></li>
-  <li><a href="#form" data-toggle="tab">Form elements</a></li>
-  <li><a href="#tables" data-toggle="tab">Tables</a></li>
-  <li><a href="#images" data-toggle="tab">Images</a></li>
-  <li><a href="#medias" data-toggle="tab">Medias</a></li>
-  <li><a href="#visibility" data-toggle="tab">Visibility</a></li>
-</ul>
-<div class="tab-content bsg-right">
-  <div class="tab-pane active" id="textes">
-    {% include "guideline/elements/text" %}
+<div class="row-offcanvas row-offcanvas-left">
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar-offcanvas bsg-left" id="sidebar" role="navigation">
+    <ul class="nav nav-tabs nav-stacked">
+      <li class="active"><a href="#textes" data-toggle="tab">Textes</a></li>
+      <li><a href="#colors" data-toggle="tab">Colors</a></li>
+      <li><a href="#backgrounds" data-toggle="tab">Backgrounds</a></li>
+      <li><a href="#lists" data-toggle="tab">Lists</a></li>
+      <li><a href="#buttons" data-toggle="tab">Buttons</a></li>
+      <li><a href="#form" data-toggle="tab">Form elements</a></li>
+      <li><a href="#tables" data-toggle="tab">Tables</a></li>
+      <li><a href="#images" data-toggle="tab">Images</a></li>
+      <li><a href="#medias" data-toggle="tab">Medias</a></li>
+      <li><a href="#visibility" data-toggle="tab">Visibility</a></li>
+    </ul>
   </div>
-  <div class="tab-pane" id="colors">
-    {% include "guideline/elements/colors" %}
-  </div>
-  <div class="tab-pane" id="backgrounds">
-    {% include "guideline/elements/background-colors" %}
-  </div>
-  <div class="tab-pane" id="buttons">
-    {% include "guideline/elements/buttons" %}
-  </div>
-  <div class="tab-pane" id="lists">
-    {% include "guideline/elements/lists" %}
-  </div>
-  <div class="tab-pane" id="form">
-    {% include "guideline/elements/forms" %}
-  </div>
-  <div class="tab-pane" id="tables">
-    {% include "guideline/elements/tables" %}
-  </div>
-  <div class="tab-pane" id="images">
-    {% include "guideline/elements/images" %}
-  </div>
-  <div class="tab-pane" id="medias">
-    {% include "guideline/elements/medias" %}
-  </div>
-  <div class="tab-pane" id="visibility">
-    {% include "guideline/elements/visible" %}
+  <div class="col-xs-12 col-sm-9 col-md-10 bsg-right">
+    <div class="tab-content">
+      <div class="tab-pane active" id="textes">
+        {% include "guideline/elements/text" %}
+      </div>
+      <div class="tab-pane" id="colors">
+        {% include "guideline/elements/colors" %}
+      </div>
+      <div class="tab-pane" id="backgrounds">
+        {% include "guideline/elements/background-colors" %}
+      </div>
+      <div class="tab-pane" id="buttons">
+        {% include "guideline/elements/buttons" %}
+      </div>
+      <div class="tab-pane" id="lists">
+        {% include "guideline/elements/lists" %}
+      </div>
+      <div class="tab-pane" id="form">
+        {% include "guideline/elements/forms" %}
+      </div>
+      <div class="tab-pane" id="tables">
+        {% include "guideline/elements/tables" %}
+      </div>
+      <div class="tab-pane" id="images">
+        {% include "guideline/elements/images" %}
+      </div>
+      <div class="tab-pane" id="medias">
+        {% include "guideline/elements/medias" %}
+      </div>
+      <div class="tab-pane" id="visibility">
+        {% include "guideline/elements/visible" %}
+      </div>
+    </div>
   </div>
 </div>
 {% endblock %}

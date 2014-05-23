@@ -1,31 +1,37 @@
 {% block content %}
 {% include "guideline/navigation" %}
-<ul class="nav nav-tabs nav-stacked bsg-left">
-	<li class="active"><a href="#header" data-toggle="tab">Header</a></li>
-	<li><a href="#page-header" data-toggle="tab">Page-header</a></li>
-	<li><a href="#article" data-toggle="tab">Article</a></li>
-	<li><a href="#comments" data-toggle="tab">Comments</a></li>
-	<li><a href="#aside" data-toggle="tab">Aside</a></li>
-	<li><a href="#footer" data-toggle="tab">Footer</a></li>
-</ul>
-<div class="tab-content bsg-right">
-	<div class="tab-pane active" id="header">
-		{% include "guideline/sections/header" %}
+<div class="row-offcanvas row-offcanvas-left">
+	<div class="col-xs-6 col-sm-3 col-md-2 sidebar-offcanvas bsg-left" id="sidebar" role="navigation">
+		<ul class="nav nav-tabs nav-stacked">
+			<li class="active"><a href="#header" data-toggle="tab">Header</a></li>
+			<li><a href="#page-header" data-toggle="tab">Page-header</a></li>
+			<li><a href="#article" data-toggle="tab">Article</a></li>
+			<li><a href="#comments" data-toggle="tab">Comments</a></li>
+			<li><a href="#aside" data-toggle="tab">Aside</a></li>
+			<li><a href="#footer" data-toggle="tab">Footer</a></li>
+		</ul>
 	</div>
-	<div class="tab-pane" id="page-header">
-		{% include "guideline/sections/page-header" %}
-	</div>
-	<div class="tab-pane" id="article">
-		{% include "guideline/sections/article" %}
-	</div>
-	<div class="tab-pane" id="comments">
-		{% include "guideline/sections/comments" %}
-	</div>
-	<div class="tab-pane" id="aside">
-		{% include "guideline/sections/aside" %}
-	</div>
-	<div class="tab-pane" id="footer">
-		{% include "layout/footer" %}
+	<div class="col-xs-12 col-sm-9 col-md-10 bsg-right">
+		<div class="tab-content">
+			<div class="tab-pane active" id="header">
+				{% include "guideline/sections/header" %}
+			</div>
+			<div class="tab-pane" id="page-header">
+				{% include "guideline/sections/page-header" %}
+			</div>
+			<div class="tab-pane" id="article">
+				{% include "guideline/sections/article" %}
+			</div>
+			<div class="tab-pane" id="comments">
+				{% include "guideline/sections/comments" %}
+			</div>
+			<div class="tab-pane" id="aside">
+				{% include "guideline/sections/aside" %}
+			</div>
+			<div class="tab-pane" id="footer">
+				{% include "layout/footer" %}
+			</div>
+		</div>
 	</div>
 </div>
 {% endblock %}

@@ -1,35 +1,42 @@
 {% block content %}
 {% include "guideline/navigation" %}
-<ul class="nav nav-tabs nav-stacked bsg-left">
-  <li class="active"><a href="#navigation" data-toggle="tab">Navigation</a></li>
-  <li><a href="#blocs" data-toggle="tab">Blocs</a></li>
-  <li><a href="#call2action" data-toggle="tab">Call 2 action</a></li>
-  <li><a href="#forms" data-toggle="tab">Forms</a></li>
-  <li><a href="#breadcrumbs" data-toggle="tab">Breadcrumbs</a></li>
-  <li><a href="#pagination" data-toggle="tab">Pagination</a></li>
-   <li><a href="#alerts" data-toggle="tab">Alerts</a></li>
-</ul>
-<div class="tab-content bsg-right">
-  <div class="tab-pane active" id="navigation">
-   {% include "guideline/blocs/navigation" %}
+
+<div class="row-offcanvas row-offcanvas-left">
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar-offcanvas bsg-left" id="sidebar" role="navigation">
+    <ul class="nav nav-tabs nav-stacked "> 
+      <li class="active"><a href="#navigation" data-toggle="tab">Navigation</a></li>
+      <li><a href="#blocs" data-toggle="tab">Blocs</a></li>
+      <li><a href="#call2action" data-toggle="tab">Call 2 action</a></li>
+      <li><a href="#forms" data-toggle="tab">Forms</a></li>
+      <li><a href="#breadcrumbs" data-toggle="tab">Breadcrumbs</a></li>
+      <li><a href="#pagination" data-toggle="tab">Pagination</a></li>
+      <li><a href="#alerts" data-toggle="tab">Alerts</a></li>
+    </ul>
   </div>
-  <div class="tab-pane" id="blocs">
-     {% include "guideline/blocs/blocs" %}
+  <div class="col-xs-12 col-sm-9 col-md-10 bsg-right">
+    <div class="tab-content ">
+      <div class="tab-pane active" id="navigation">
+       {% include "guideline/blocs/navigation" %}
+     </div>
+     <div class="tab-pane" id="blocs">
+       {% include "guideline/blocs/blocs" %}
+     </div>
+     <div class="tab-pane" id="call2action">
+       {% include "guideline/blocs/call2action" %}
+     </div>
+     <div class="tab-pane" id="forms">
+       {% include "guideline/blocs/forms" %}
+     </div>
+     <div class="tab-pane" id="breadcrumbs">
+       {% include "guideline/blocs/breadcrumbs" %}
+     </div>
+     <div class="tab-pane" id="pagination">
+       {% include "guideline/blocs/pagination" %}
+     </div>
+     <div class="tab-pane" id="alerts">
+      {% include "guideline/blocs/alerts" %}
+    </div>
   </div>
-  <div class="tab-pane" id="call2action">
-     {% include "guideline/blocs/call2action" %}
-  </div>
-  <div class="tab-pane" id="forms">
-     {% include "guideline/blocs/forms" %}
-  </div>
-  <div class="tab-pane" id="breadcrumbs">
-     {% include "guideline/blocs/breadcrumbs" %}
-  </div>
-  <div class="tab-pane" id="pagination">
-     {% include "guideline/blocs/pagination" %}
-  </div>
-  <div class="tab-pane" id="alerts">
-    {% include "guideline/blocs/alerts" %}
-  </div>
+</div>
 </div>
 {% endblock %}

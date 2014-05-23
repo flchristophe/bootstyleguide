@@ -1,27 +1,33 @@
 {% block content %}
 {% include "guideline/navigation" %}
-<ul class="nav nav-tabs nav-stacked bsg-left">
-	<li class="active"><a href="#slider" data-toggle="tab">Slider</a></li>
-	<li><a href="#modal" data-toggle="tab">Modal</a></li>
-	<li><a href="#dropdown" data-toggle="tab">Dropdown</a></li>
-	<li><a href="#tabs" data-toggle="tab">Tabs</a></li>
-	<li><a href="#collapse" data-toggle="tab">Collapse</a></li>
-</ul>
-<div class="tab-content bsg-right">
-	<div class="tab-pane active" id="slider">
-		{% include "guideline/patterns/slider" %}
+<div class="row-offcanvas row-offcanvas-left">
+	<div class="col-xs-6 col-sm-3 col-md-2 sidebar-offcanvas bsg-left" id="sidebar" role="navigation">
+		<ul class="nav nav-tabs nav-stacked">
+			<li class="active"><a href="#slider" data-toggle="tab">Slider</a></li>
+			<li><a href="#modal" data-toggle="tab">Modal</a></li>
+			<li><a href="#dropdown" data-toggle="tab">Dropdown</a></li>
+			<li><a href="#tabs" data-toggle="tab">Tabs</a></li>
+			<li><a href="#collapse" data-toggle="tab">Collapse</a></li>
+		</ul>
 	</div>
-	<div class="tab-pane" id="modal">
-		{% include "guideline/patterns/modal" %}
-	</div>
-	<div class="tab-pane" id="dropdown">
-		{% include "guideline/patterns/dropdown" %}
-	</div>
-	<div class="tab-pane" id="tabs">
-		{% include "guideline/patterns/tabs" %}
-	</div>
-	<div class="tab-pane" id="collapse">
-		{% include "guideline/patterns/collapse" %}
+	<div class="col-xs-12 col-sm-9 col-md-10 bsg-right">
+		<div class="tab-content">
+			<div class="tab-pane active" id="slider">
+				{% include "guideline/patterns/slider" %}
+			</div>
+			<div class="tab-pane" id="modal">
+				{% include "guideline/patterns/modal" %}
+			</div>
+			<div class="tab-pane" id="dropdown">
+				{% include "guideline/patterns/dropdown" %}
+			</div>
+			<div class="tab-pane" id="tabs">
+				{% include "guideline/patterns/tabs" %}
+			</div>
+			<div class="tab-pane" id="collapse">
+				{% include "guideline/patterns/collapse" %}
+			</div>
+		</div>
 	</div>
 </div>
 {% endblock %}
