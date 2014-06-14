@@ -1,0 +1,20 @@
+.carousel{
+	.carousel-inner{
+		.item{
+			&.active{}
+			.carousel-caption {}
+		}
+	}
+	.carousel-control{
+		&:hover{}
+		&focus{}
+
+		&.left{}
+		&.right{}
+	}
+	.carousel-indicators{
+		li{
+			&.active{}
+		}
+	}
+}

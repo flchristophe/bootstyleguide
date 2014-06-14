@@ -1,56 +1,74 @@
-h1, h2, h3, h4, h5, h6  { 
-	a{}
-	a:hover{} 
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6  { 
+	a{
+		&:hover{} 
+	}
 }
-h1 {
-	a{}
-	a:hover{}
+h1, .h1 {
+	a{
+		&:hover{} 
+	}
 }
-h2 {
-	a{}
-	a:hover{}
+h2, .h2 {
+	a{
+		&:hover{} 
+	}
 }
-h3 {
-	a{}
-	a:hover{}
+h3, .h3 {
+	a{
+		&:hover{} 
+	}
 }
-h4 {
-	a{}
-	a:hover{}
+h4, .h4 {
+	a{
+		&:hover{} 
+	}
 }
-h5 {
-	a{}
-	a:hover{}
+h5, .h5 {
+	a{
+		&:hover{} 
+	}
 }
-h6 {
-	a{}
-	a:hover{}
+h6, .h6 {
+	a{
+		&:hover{} 
+	}
 }
 
 p, li {
-	a{}
-	a:hover{}
+	a{
+		&:hover{} 
+	}
 }
 p {
-	a{}
-	a:hover{}
+	a{
+		&:hover{} 
+	}
 }
 li {
-	a{}
-	a:hover{}
+	a{
+		&:hover{} 
+	}
+}
+a{
+	&:hover{} 
+	&:focus{} 
 }
 
-
-small {}
-strong {}
+small, .small {}
+strong, .strong {}
 em {}
 
 .lead {}
 .text-left{}
 .text-center{}
 .text-right{}
+.text-justify{}
+.text-muted{}
 
 blockquote {}
 address {}
 
 hr {}
+
+abbr[title]{}
+.initialism {}

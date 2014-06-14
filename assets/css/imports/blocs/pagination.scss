@@ -1,22 +1,69 @@
 .pagination {
 	ul{
-		li {
-			&:hover {}
-			&:first-child {}
-			&:last-child {}
-			a {
+		> li {
+			> a {
 				&:hover {}
+				&:focus{}
+			}
+			> span {}
+
+			&:hover {}
+
+			&:first-child {
+				> a {
+					&:hover {}
+					&:focus{}
+				}
+			}
+
+			&:last-child {
+				> a {
+					&:hover {}
+					&:focus{}
+				}
+			}
+
+			&.active{
+				> a {
+					&:hover {}
+					&:focus{}
+				}
 			}
 		}
 	}
 }
 .pager{
-	li {
-		&:hover {}
-		&:first-child {}
-		&:last-child {}
-		a {
+	> li {
+		> a {
 			&:hover {}
+			&:focus{}
 		}
+		> span {
+			&:hover {}
+			&:focus{}
+		}
+
+		&:hover {}
+		&:first-child {
+			> a {
+				&:hover {}
+				&:focus{}
+			}
+		}
+		&:last-child {
+			> a {
+				&:hover {}
+				&:focus{}
+			}
+		}
+	}
+	.next {
+    	> a{}
+    	> span {}
+	}
+
+  	.previous {
+    	> a{}
+    	> span {}
 	}
 }	

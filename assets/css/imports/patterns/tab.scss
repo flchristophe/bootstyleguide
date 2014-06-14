@@ -2,11 +2,16 @@
 	li {
 		a {
 			&:hover {}
+			&:focus{}
 		}
 		&.active {
 			a {
 				&:hover {}
+				&:focus{}
 			}
 		}
 	}
+}
+.tab-content{
+	.tab-pane{}
 }

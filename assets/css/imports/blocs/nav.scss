@@ -1,56 +1,79 @@
 .nav {
-	li {
-		a {
+	> li {
+		> a {
 			&:hover {}
+			&:focus{}
 		}
 		&.active {
-			a {
+			> a {
 				&:hover {}
+				&:focus{}
 			}
 		}
 	}
 }
 
 .nav-list {
-	li {
-		a {
+	> li {
+		> a {
 			&:hover {}
+			&:focus{}
 		}
 		&.active {
-			a {
+			> a {
 				&:hover {}
+				&:focus{}
 			}
 		}
 	}
 }
 
 .nav-pills {
-	li {
-		a {
+	> li {
+		> a {
 			&:hover {}
+			&:focus{}
 		}
 		&.active {
-			a {
+			> a {
 				&:hover {}
+				&:focus{}
 			}
 		}
 	}
 }
 
 .navbar {
-	.navbar-brand {}
+	.navbar-brand {
+		&:hover{}
+		&:focus{}
+	}
 	.navbar-inner {
 		.nav {
-			li {
-				a {
+			> li {
+				> a {
 					&:hover {}
+					&:focus{}
 				}
 				&.active {
 					a {
 						&:hover {}
+						&:focus{}
 					}
 				}
 			}
 		}
 	}
 }
+
+.navbar-header{}
+.navbar-collapse{}
+.navbar-toggle{
+	&:hover{}
+	&:focus{}	
+}
+.navbar-fixed-top{}
+.navbar-static-top{}
+.navbar-fixed-bottom{}
+
+.icon-bar{}

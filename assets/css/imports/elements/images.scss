@@ -3,6 +3,8 @@ img{max-width: 100%;}
 .img-rounded {}
 .img-cirle {}
 .img-polaroid {}
+.img-responsive {}
+.img-thumbnail{}
 
 .cover {
 	-webkit-background-size: cover; 
@@ -10,3 +12,19 @@ img{max-width: 100%;}
 	-o-background-size: cover; 
 	background-size: cover;
 }
+
+.navbar-brand{}
+
+figure{}
+.caption{}
+
+.thumbnail{
+	> img{}
+	> a{
+		> img{}
+	}
+}
+a.thumbnail:hover{}
+a.thumbnail:focus{}
+a.thumbnail.active{}
+

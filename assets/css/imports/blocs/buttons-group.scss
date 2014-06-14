@@ -1,0 +1,34 @@
+.btn-group{
+	.btn{}
+	.btn:first-child{}
+	.btn:last-child{}
+}
+.btn-group-vertical{
+	.btn{}
+	.btn:first-child{}
+	.btn:last-child{}
+}
+
+.btn-group-justified {
+	.btn{}
+	.btn:first-child{}
+	.btn:last-child{}
+}
+
+.btn-group-xs{
+	.btn{}
+}
+.btn-group-sm{
+	.btn{}
+}
+.btn-group-lg{
+	.btn{}
+}
+
+.btn-toolbar{
+	.btn-group{
+		.btn{}
+		.btn:first-child{}
+		.btn:last-child{}
+	}
+}

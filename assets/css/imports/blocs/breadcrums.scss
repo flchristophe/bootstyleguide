@@ -2,8 +2,10 @@
 	li {
 		a {
 			&:hover {}
+			&:focus{}
 		}
 		&.active {}
 		&.divider {}
+		&:before{}
 	}
 }

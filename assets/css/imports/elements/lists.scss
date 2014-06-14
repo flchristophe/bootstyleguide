@@ -34,3 +34,17 @@ dl {
 	dt {}
 	dd {}
 }
+
+.list-group{
+	list-group-item{
+		&:hover{}
+		&:focus{}
+
+		&.active{
+			&:hover{}
+			&:focus{}
+		}
+		.list-group-item-heading{}
+		.list-group-item-text{}
+	}
+}

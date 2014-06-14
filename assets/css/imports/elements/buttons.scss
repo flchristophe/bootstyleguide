@@ -1,16 +1,31 @@
 .btn {
 	&:hover{}
+	&:focus{}
+	&:active{
+		&:focus{}
+	}
+	&.active{
+		&:focus{}
+	}
 }
+
 .btn-large {
 	&:hover{}
+	&:focus{}
 }
 .btn-small {
 	&:hover{}
+	&:focus{}
 }
 .btn-block {
 	&:hover{}
+	&:focus{}
 }
 
+.btn-default {
+	&:hover{}
+	&:focus{}
+}
 .btn-primary {
 	background-color: #FF0000; 
 	border: none; 
@@ -21,18 +36,19 @@
 		border: none; 
 		color: #fff;
 	}
+	&:focus{}
 }
 
 .btn-secondary {
 	background-color: #00FF00; 
 	border: none;  
 	color: #fff;
-
 	&:hover{
 		background-color: #333; 
 		border: none; 
 		color: #fff;
 	}
+	&:focus{}
 }
 
 .btn-third {
@@ -45,7 +61,30 @@
 		border: none; 
 		color: #fff;
 	}
+	&:focus{}
+}
+
+.btn-success{
+	&:hover{}
+	&:focus{}
+}
+.btn-info{
+	&:hover{}
+	&:focus{}
+}
+.btn-warning{
+	&:hover{}
+	&:focus{}
+}
+.btn-danger{
+	&:hover{}
+	&:focus{}
 }
 .btn.close {
 	&:hover{}
+	&:focus{}
+}
+.btn-link{
+	&:hover{}
+	&:focus{}
 }

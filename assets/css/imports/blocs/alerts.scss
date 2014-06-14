@@ -1,5 +1,15 @@
 .alert {
+	h4{}
+	p{}
 	.btn.close {
 		&:hover{}
+		&:focus{}
 	}
+	.close{}
 }
+.alert-link{}
+.alert-dismissable{}
+.alert-success{}
+.alert-info{}
+.alert-warning{}
+.alert-danger{}

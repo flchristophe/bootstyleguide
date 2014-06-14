@@ -26,3 +26,30 @@ input[type="search"] {}
 input[type="tel"] {}
 input[type="color"] {}
 .uneditable-input {}
+
+.form-group{}
+.form-control{}
+.form-control-feedback {}
+
+.form-inline{
+	.form-group{}
+	.form-control{}
+	.form-control-feedback {}
+}
+.form-horizontal{
+	.form-group{}
+	.form-control{}
+	.form-control-feedback {}
+}
+
+.has-feedback{}
+.has-success{}
+.has-warning{}
+.has-error{}
+
+.help-block{}
+.control-label{}
+
+.input-group{}
+.input-group-lg{}
+.input-group-sm{}

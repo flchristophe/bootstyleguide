@@ -5132,43 +5132,25 @@ button.close {
   .hidden-print {
     display: none !important; } }
 .container {
-  margin: 0 40px;
+  margin: 0 auto;
   max-width: 1200px; }
 
-.color-primary {
+.text-primary {
   color: #FF0000; }
 
-.color-secondary {
+.text-secondary {
   color: #00FF00; }
 
-.color-third {
+.text-third {
   color: #0000FF; }
 
-.color-000 {
-  color: #000; }
-
-.color-333 {
-  color: #333; }
-
-.color-666 {
-  color: #666; }
-
-.color-999 {
-  color: #999; }
-
-.color-CCC {
-  color: #CCC; }
-
-.color-FFF {
-  color: #FFF; }
-
-.color-back-primary {
+.bg-primary {
   background-color: #FF0000; }
 
-.color-back-secondary {
+.bg-secondary {
   background-color: #00FF00; }
 
-.color-back-third {
+.bg-third {
   background-color: #0000FF; }
 
 .btn-primary {

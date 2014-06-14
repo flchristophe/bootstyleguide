@@ -1,0 +1,10 @@
+.tooltip{
+	&.in{}
+	&.left{}
+	&.right{}
+	&.top{}
+	&.bottom{}
+
+	.tooltip-inner{}
+	.tooltip-arrow{}
+}

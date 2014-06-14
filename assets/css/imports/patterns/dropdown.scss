@@ -1,0 +1,33 @@
+.dropdown{
+	a{
+		.caret{}
+	}
+	&.active{
+		a{
+			.caret{}
+		}
+	}
+	&.open{
+		
+	}
+}
+.dropdown-toggle{
+	&:hover{}
+	&:focus{}
+}
+.dropdown-menu{
+	li{
+		a{
+			&:hover{}
+			&:focus{}
+		}
+		&.active{
+			a{
+				&:hover{}
+				&:focus{}
+			}
+		}
+		&.divider{}
+		&.pull-right {}
+	}
+}

@@ -1,60 +1,89 @@
 .table {
-	thead {
-		tr{}
-		th{}
+	> thead {
+		> tr{}
+		> th{}
 	}
-	tbody {
-		tr{}
-		td{}
+	> tbody {
+		> tr{}
+		> td{}
 	}
-	tfooter {
-		tr{}
-		td{}
+	> tfooter {
+		> tr{}
+		> td{}
+	}
+}
+
+.table.table-condensed{
+	> thead {
+		> tr{}
+		> th{}
+	}
+	> tbody {
+		> tr{}
+		> td{}
+	}
+	> tfooter {
+		> tr{}
+		> td{}
+	}
+}
+
+.table.table-bordered {
+	> thead {
+		> tr{}
+		> th{}
+	}
+	> tbody {
+		> tr{}
+		> td{}
+	}
+	> tfooter {
+		> tr{}
+		> td{}
 	}
 }
 
 .table.table-hover {
-	thead {
-		tr{}
-		th{}
+	> thead {
+		> tr{}
+		> th{}
 	}
-	tbody {
-		tr{}
-		td{}
+	> tbody {
+		> tr{}
+		> td{}
 	}
-	tfooter {
-		tr{}
-		td{}
+	> tfooter {
+		> tr{}
+		> td{}
 	}
 }
 
-
 .table.table-striped {
-	thead {
-		tr:nth-child(odd){}
-		tr:nth-child(odd) >th{}
+	> thead {
+		> tr:nth-child(odd){}
+		> tr:nth-child(odd) > th{}
 	}
-	tbody {
-		tr:nth-child(odd){}
-		tr:nth-child(odd) >td{}
+	> tbody {
+		> tr:nth-child(odd){}
+		> tr:nth-child(odd) > td{}
 	}
-	tfooter {
-		tr:nth-child(odd){}
-		tr:nth-child(odd) >td{}
+	> tfooter {
+		> tr:nth-child(odd){}
+		> tr:nth-child(odd) > td{}
 	}
 }
 
 .table.table-hover.table-striped  {
-	thead {
-		tr:nth-child(odd){}
-		tr:nth-child(odd) >th{}
+	> thead {
+		> tr:nth-child(odd){}
+		> tr:nth-child(odd) > th{}
 	}
-	tbody {
+	> tbody {
 		tr:nth-child(odd){}
-		tr:nth-child(odd) >td{}
+		tr:nth-child(odd) > td{}
 	}
-	tfooter {
-		tr:nth-child(odd){}
-		tr:nth-child(odd) >td{}
+	> tfooter {
+		> tr:nth-child(odd){}
+		> tr:nth-child(odd) > td{}
 	}
 }
