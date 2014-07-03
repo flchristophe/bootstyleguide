@@ -1,0 +1,72 @@
+.openUpLeft {
+  -webkit-animation-name: openUpLeft;
+  -moz-animation-name: openUpLeft;
+  -ms-animation-name: openUpLeft;
+  -o-animation-name: openUpLeft;
+  animation-name: openUpLeft;
+}
+@-moz-keyframes openUpLeft {
+  0% {
+    -moz-transform-origin: top left;
+    -moz-transform: rotate(0deg);
+    -moz-animation-timing-function: ease-out;
+  }
+
+  100% {
+    -moz-transform-origin: top left;
+    -moz-transform: rotate(110deg);
+    -moz-animation-timing-function: ease-in-out;
+  }
+}
+@-webkit-keyframes openUpLeft {
+  0% {
+    -webkit-transform-origin: top left;
+    -webkit-transform: rotate(0deg);
+    -webkit-animation-timing-function: ease-out;
+  }
+
+  100% {
+    -webkit-transform-origin: top left;
+    -webkit-transform: rotate(110deg);
+    -webkit-animation-timing-function: ease-in-out;
+  }
+}
+@-o-keyframes openUpLeft {
+  0% {
+    -o-transform-origin: top left;
+    -o-transform: rotate(0deg);
+    -o-animation-timing-function: ease-out;
+  }
+
+  100% {
+    -o-transform-origin: top left;
+    -o-transform: rotate(110deg);
+    -o-animation-timing-function: ease-in-out;
+  }
+}
+@-ms-keyframes openUpLeft {
+  0% {
+    -ms-transform-origin: top left;
+    -ms-transform: rotate(0deg);
+    -ms-animation-timing-function: ease-out;
+  }
+
+  100% {
+    -ms-transform-origin: top left;
+    -ms-transform: rotate(110deg);
+    -ms-animation-timing-function: ease-in-out;
+  }
+}
+@keyframes openUpLeft {
+  0% {
+    transform-origin: top left;
+    transform: rotate(0deg);
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    transform-origin: top left;
+    transform: rotate(110deg);
+    animation-timing-function: ease-in-out;
+  }
+}

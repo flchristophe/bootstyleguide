@@ -1,0 +1,27 @@
+// animation duration
+
+.anim-xs{
+	-webkit-animation-duration: 250ms;
+	-o-animation-duration: 250ms;
+	animation-duration: 250ms;
+}
+.anim-sm{
+	-webkit-animation-duration: 500ms;
+	-o-animation-duration: 500ms;
+	animation-duration: 500ms;
+}
+.anim-md{
+	-webkit-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+}
+.anim-lg{
+	-webkit-animation-duration: 2s;
+	-o-animation-duration: 2s;
+	animation-duration: 2s;
+}
+.anim-xl{
+	-webkit-animation-duration: 3s;
+	-o-animation-duration: 3s;
+	animation-duration: 3s;
+}

@@ -1,0 +1,27 @@
+// animation delay
+
+.anim-offset-xs{
+	-webkit-animation-delay: 250ms;
+	-o-animation-delay: 250ms;
+	animation-delay: 100ms;
+}
+.anim-offset-sm{
+	-webkit-animation-delay: 500ms;
+	-o-animation-delay: 500ms;
+	animation-delay: 500ms;
+}
+.anim-offset-md{
+	-webkit-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.anim-offset-lg{
+	-webkit-animation-delay: 2s;
+	-o-animation-delay: 2s;
+	animation-delay: 2s;
+}
+.anim-offset-xl{
+	-webkit-animation-delay: 3s;
+	-o-animation-delay: 3s;
+	animation-delay: 3s;
+}

@@ -1,0 +1,27 @@
+// transition delay
+
+.tran-offset-xs{
+	-webkit-transition-delay: 200ms;
+	-o-transition-delay: 200ms;
+	transition-delay: 200ms;
+}
+.tran-offset-sm{
+	-webkit-transition-delay: 500ms;
+	-o-transition-delay: 500ms;
+	transition-delay: 500ms;
+}
+.tran-offset-md{
+	-webkit-transition-delay: 1s;
+	-o-transition-delay: 1s;
+	transition-delay: 1s;
+}
+.tran-offset-lg{
+	-webkit-transition-delay: 2s;
+	-o-transition-delay: 2s;
+	transition-delay: 2s;
+}
+.tran-offset-xl{
+	-webkit-transition-delay: 3s;
+	-o-transition-delay: 3s;
+	transition-delay: 3s;
+}

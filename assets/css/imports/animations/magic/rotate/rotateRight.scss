@@ -1,0 +1,80 @@
+.rotateRight {
+  -webkit-backface-visibility: visible !important;
+  -moz-backface-visibility: visible !important;
+  -ms-backface-visibility: visible !important;
+  -o-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: rotateRight;
+  -moz-animation-name: rotateRight;
+  -ms-animation-name: rotateRight;
+  -o-animation-name: rotateRight;
+  animation-name: rotateRight;
+}
+
+@-moz-keyframes rotateRight {
+  0% {
+    opacity: 1;
+    -moz-transform-origin: 0 0;
+    -moz-transform: perspective(800px) rotateY(0deg) translate3d(0px);
+  }
+
+  100% {
+    opacity: 0;
+    -moz-transform-origin: 50% 0;
+    -moz-transform: perspective(800px) rotateY(-180deg) translateZ(150px);
+  }
+}
+@-webkit-keyframes rotateRight {
+  0% {
+    opacity: 1;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: perspective(800px) rotateY(0deg) translate3d(0px);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 0;
+    -webkit-transform: perspective(800px) rotateY(-180deg) translateZ(150px);
+  }
+}
+@-o-keyframes rotateRight {
+  0% {
+  opacity: 1;
+    -o-transform-origin: 0 0;
+    -o-transform: perspective(800px) rotateY(0deg) translate3d(0px);
+  }
+
+  100% {
+    opacity: 0;
+    -o-transform-origin: 50% 0;
+    -o-transform: perspective(800px) rotateY(-180deg) translateZ(150px);
+  }
+}
+@-ms-keyframes rotateRight {
+  0% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-transform-origin: 0 0;
+    -ms-transform: perspective(800px) rotateY(0deg) translate3d(0px);
+  }
+
+  100% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -ms-transform-origin: 50% 0;
+    -ms-transform: perspective(800px) rotateY(-180deg) translateZ(150px);
+  }
+}
+@keyframes rotateRight {
+  0% {
+    opacity: 1;
+    transform-origin: 0 0;
+    transform: perspective(800px) rotateY(0deg) translate3d(0px);
+  }
+
+  100% {
+    opacity: 0;
+    transform-origin: 50% 0;
+    transform: perspective(800px) rotateY(-180deg) translateZ(150px);
+  }
+}

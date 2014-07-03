@@ -1,0 +1,82 @@
+.openDownRightOut {
+  -webkit-animation-name: openDownRightOut;
+  -moz-animation-name: openDownRightOut;
+  -ms-animation-name: openDownRightOut;
+  -o-animation-name: openDownRightOut;
+  animation-name: openDownRightOut;
+}
+@-moz-keyframes openDownRightOut {
+  0% {
+    opacity: 1;
+    -moz-transform-origin: bottom right;
+    -moz-transform: rotate(0deg);
+    -moz-animation-timing-function: ease-out;
+  }
+
+  100% {
+    opacity: 0;
+    -moz-transform-origin: bottom right;
+    -moz-transform: rotate(110deg);
+    -moz-animation-timing-function: ease-in-out;
+  }
+}
+@-webkit-keyframes openDownRightOut {
+  0% {
+    opacity: 1;
+    -webkit-transform-origin: bottom right;
+    -webkit-transform: rotate(0deg);
+    -webkit-animation-timing-function: ease-out;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform-origin: bottom right;
+    -webkit-transform: rotate(110deg);
+    -webkit-animation-timing-function: ease-in-out;
+  }
+}
+@-o-keyframes openDownRightOut {
+  0% {
+    opacity: 1;
+    -o-transform-origin: bottom right;
+    -o-transform: rotate(0deg);
+    -o-animation-timing-function: ease-out;
+  }
+
+  100% {
+    opacity: 0;
+    -o-transform-origin: bottom right;
+    -o-transform: rotate(110deg);
+    -o-animation-timing-function: ease-in-out;
+  }
+}
+@-ms-keyframes openDownRightOut {
+  0% {
+    opacity: 1;
+    -ms-transform-origin: bottom right;
+    -ms-transform: rotate(0deg);
+    -ms-animation-timing-function: ease-out;
+  }
+
+  100% {
+    opacity: 0;
+    -ms-transform-origin: bottom right;
+    -ms-transform: rotate(110deg);
+    -ms-animation-timing-function: ease-in-out;
+  }
+}
+@keyframes openDownRightOut {
+  0% {
+    opacity: 1;
+    transform-origin: bottom right;
+    transform: rotate(0deg);
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    opacity: 0;
+    transform-origin: bottom right;
+    transform: rotate(110deg);
+    animation-timing-function: ease-in-out;
+  }
+}

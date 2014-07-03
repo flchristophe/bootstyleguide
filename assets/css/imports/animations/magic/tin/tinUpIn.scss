@@ -1,0 +1,91 @@
+.tinUpIn {
+  -webkit-animation-name: tinUpIn;
+  -moz-animation-name: tinUpIn;
+  -ms-animation-name: tinUpIn;
+  -o-animation-name: tinUpIn;
+  animation-name: tinUpIn;
+}
+
+@-moz-keyframes tinUpIn {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(1, 1) translateY(-900%);
+  }
+
+  50%, 70%, 90% {
+    opacity: 1;
+    -moz-transform: scale(1.1, 1.1) translateY(0);
+  }
+
+  60%, 80%, 100% {
+    opacity: 1;
+    -moz-transform: scale(1, 1) translateY(0);
+  }
+}
+@-webkit-keyframes tinUpIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1, 1) translateY(-900%);
+  }
+
+  50%, 70%, 90% {
+    opacity: 1;
+    -webkit-transform: scale(1.1, 1.1) translateY(0);
+  }
+
+  60%, 80%, 100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1) translateY(0);
+  }
+}
+@-o-keyframes tinUpIn {
+  0% {
+    opacity: 0;
+    -o-transform: scale(1, 1) translateY(-900%);
+  }
+
+  50%, 70%, 90% {
+    opacity: 1;
+    -o-transform: scale(1.1, 1.1) translateY(0);
+  }
+
+  60%, 80%, 100% {
+    opacity: 1;
+    -o-transform: scale(1, 1) translateY(0);
+  }
+}
+@-ms-keyframes tinUpIn {
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -ms-transform: scale(1, 1) translateY(-900%);
+  }
+
+  50%, 70%, 90% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-transform: scale(1.1, 1.1) translateY(0);
+  }
+
+  60%, 80%, 100% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes tinUpIn {
+  0% {
+    opacity: 0;
+    transform: scale(1, 1) translateY(-900%);
+  }
+
+  50%, 70%, 90% {
+    opacity: 1;
+    transform: scale(1.1, 1.1) translateY(0);
+  }
+
+  60%, 80%, 100% {
+    opacity: 1;
+    transform: scale(1, 1) translateY(0);
+  }
+}

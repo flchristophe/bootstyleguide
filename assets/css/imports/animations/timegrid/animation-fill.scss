@@ -1,0 +1,23 @@
+// animation fill
+
+.anim-fill-both{
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.anim-fill-backwards{
+    -webkit-animation-fill-mode: backwards;
+    -moz-animation-fill-mode: backwards;
+    -ms-animation-fill-mode: backwards;
+    -o-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+}
+.anim-fill-forwards{
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}

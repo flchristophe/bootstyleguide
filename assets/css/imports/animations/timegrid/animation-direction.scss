@@ -1,0 +1,10 @@
+// animation direction
+
+.anim-normal{
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+}
+.anim-alternate{
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
