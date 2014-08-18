@@ -146,6 +146,98 @@
     top: 0;
     width: 50%;
     /* 6 columns */ } }
+.startkit {
+  padding: 40px 0 0; }
+  .startkit section {
+    margin: 50px 0;
+    position: relative; }
+  .startkit .page-header {
+    padding: 75px 0;
+    margin: 0; }
+  .startkit .call2action {
+    padding: 25px 0; }
+  .startkit .page-header .next-section {
+    font-size: 3em;
+    margin-top: 150px;
+    position: relative;
+    display: block; }
+  .startkit .cover {
+    min-height: 200px; }
+  .startkit .cover-full {
+    min-height: 400px; }
+  .startkit .solid-full {
+    min-height: 400px; }
+  .startkit .background-primary {
+    background: #FFCCCC; }
+  .startkit img {
+    max-width: 100%; }
+  .startkit label {
+    margin-bottom: 10px; }
+  .startkit input {
+    margin-bottom: 10px; }
+  .startkit .call2action-left {
+    position: relative;
+    display: block;
+    clear: both;
+    float: none;
+    padding: 0; }
+  .startkit .call2action-left > div {
+    height: 200px;
+    padding: 25px 0; }
+  .startkit .call2action-right {
+    position: relative;
+    display: block;
+    clear: both;
+    float: none;
+    padding: 0; }
+  .startkit .call2action-right > div {
+    height: 200px;
+    padding: 25px 0; }
+  .startkit .cover-left {
+    width: 33%;
+    position: absolute;
+    left: 0; }
+  .startkit .solid-left {
+    width: 33%;
+    position: absolute;
+    left: 0; }
+  .startkit .cover-right {
+    width: 33%;
+    position: absolute;
+    right: 0; }
+  .startkit .solid-right {
+    width: 33%;
+    position: absolute;
+    right: 0; }
+  .startkit .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden; }
+  .startkit .video-container iframe,
+  .startkit .video-container object,
+  .startkit .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .startkit .map-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden; }
+  .startkit .map-container iframe,
+  .startkit .map-container object,
+  .startkit .map-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;

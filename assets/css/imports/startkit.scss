@@ -1,0 +1,63 @@
+.startkit{
+	padding: 40px 0 0;
+	section{margin: 50px 0; position: relative;}
+	.page-header{padding: 75px 0; margin: 0;}
+	.call2action{padding: 25px 0;}
+	.page-header .next-section{font-size: 3em; margin-top: 150px; position: relative; display: block;}
+	.cover{min-height: 200px;}
+	.cover-full{min-height: 400px;}
+	.solid-full{min-height: 400px;}
+	.background-primary{background: #FFCCCC;}
+	img{max-width: 100%;}
+
+	label{margin-bottom: 10px;}
+	input{margin-bottom: 10px;}
+	button{}
+
+	.call2action-left{position: relative; display: block; clear: both; float: none; padding: 0;}
+	.call2action-left > div{height: 200px; padding: 25px 0;}
+	.call2action-right{position: relative; display: block; clear: both; float: none; padding: 0;}
+	.call2action-right > div{height: 200px; padding: 25px 0;}
+	.call2action .cover{}
+	.cover-left{width: 33%; position: absolute; left: 0;}
+	.solid-left{width: 33%; position: absolute; left: 0;}
+	.cover-right{width: 33%; position: absolute; right: 0;}
+	.solid-right{width: 33%; position: absolute; right: 0;}
+
+	.video-container {
+		position: relative;
+		padding-bottom: 56.25%;
+		padding-top: 30px;
+		height: 0;
+		overflow: hidden;
+	}
+
+	.video-container iframe,  
+	.video-container object,  
+	.video-container embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.map-container {
+		position: relative;
+		padding-bottom: 56.25%;
+		padding-top: 30px;
+		height: 0;
+		overflow: hidden;
+	}
+
+	.map-container iframe,   
+	.map-container object,  
+	.map-container embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
