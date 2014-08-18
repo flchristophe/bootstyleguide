@@ -1,0 +1,18 @@
+{% block content %}
+<div class="keynote" id="keynote">
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+			{% include "keynote/cover-slide" %}
+			{% include "keynote/title" %}
+			{% include "keynote/text" %}
+			{% include "keynote/text-left-image" %}
+			{% include "keynote/text-right-image" %}
+			{% include "keynote/image" %}
+			{% include "keynote/video" %}
+			{% include "keynote/quote" %}
+			{% include "keynote/last-slide" %}
+		</div>		
+	</div>
+	{% include "keynote/footer" %}
+</div>
+{% endblock %}

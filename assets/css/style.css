@@ -238,6 +238,47 @@
     width: 100%;
     height: 100%; }
 
+.keynote {
+  display: table;
+  width: 100%;
+  height: 95%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0; }
+  .keynote .slide-footer {
+    height: 5%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    color: #fff;
+    padding: 5px; }
+  .keynote .slide {
+    display: table-cell;
+    vertical-align: middle;
+    background: #FFF;
+    font-size: 1.4em;
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box; }
+  .keynote .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden; }
+  .keynote .video-container iframe,
+  .keynote .video-container object,
+  .keynote .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
