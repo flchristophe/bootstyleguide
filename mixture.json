@@ -1,9 +1,14 @@
 {
+  "convertHtml": {
+    "relativePaths": false
+  },
   "debug": false,
   "domain": null,
   "lintScripts": false,
   "modelSource": null,
-  "preprocessorLocations": "/assets",
+  "preprocessorLocations": [
+    "/assets"
+  ],
   "preprocessorScriptOutput": "/assets/js",
   "preprocessorStyleOutput": "/assets/css",
   "projectDescription": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
