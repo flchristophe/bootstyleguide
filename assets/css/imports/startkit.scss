@@ -1,28 +1,45 @@
 .startkit{
 	padding: 40px 0 0;
+	header{
+		.navbar {background: #ddd; border: none; padding: 20px 0;}
+		.navbar-center .navbar-header{ float: none; margin: 0 auto; width: 200px;text-align: center;}
+		.navbar-center .navbar-brand{ float: none; margin: 0 auto; width: 200px;text-align: center;}
+		.navbar-center .navbar-nav{clear: left; float: none; margin: 0 auto; width: 100%; text-align: center;}
+		.navbar-center .navbar-nav li{float: none; display: inline-block;}
+
+	}
 	section{margin: 50px 0; position: relative;}
+	article{margin: 50px 0; position: relative;}
+	footer{margin-top: 20px; position: relative; background: #ccc; padding: 20px 0;}
 	.page-header{padding: 75px 0; margin: 0;}
 	.call2action{padding: 25px 0;}
 	.page-header .next-section{font-size: 3em; margin-top: 150px; position: relative; display: block;}
+	.prefooter{background: #eee; padding: 20px 0;}
 	.cover{min-height: 200px;}
 	.cover-full{min-height: 400px;}
 	.solid-full{min-height: 400px;}
+	
 	.background-primary{background: #FFCCCC;}
+	
 	img{max-width: 100%;}
-
 	label{margin-bottom: 10px;}
 	input{margin-bottom: 10px;}
+	.prefooter input{margin-bottom: 0px;}
 	button{}
 
 	.call2action-left{position: relative; display: block; clear: both; float: none; padding: 0;}
-	.call2action-left > div{height: 200px; padding: 25px 0;}
+	.call2action-left > div{height: 200px; padding: 25px;}
 	.call2action-right{position: relative; display: block; clear: both; float: none; padding: 0;}
-	.call2action-right > div{height: 200px; padding: 25px 0;}
+	.call2action-right > div{height: 200px; padding: 25px;}
 	.call2action .cover{}
 	.cover-left{width: 33%; position: absolute; left: 0;}
 	.solid-left{width: 33%; position: absolute; left: 0;}
 	.cover-right{width: 33%; position: absolute; right: 0;}
 	.solid-right{width: 33%; position: absolute; right: 0;}
+
+	.price-table-title {border-top: 2px solid #eee; border-left: 2px solid #eee; border-right: 2px solid #eee; border-radius: 5px 5px 0 0; padding: 20px 0; background: #f6f6f6;}
+	.price-table-info {border: 2px solid #eee; border-radius: 0; padding: 20px 0; background: #f2f2f2;}
+	.price-table-price {border-bottom: 2px solid #eee; border-left: 2px solid #eee; border-right: 2px solid #eee; border-radius: 0 0 5px 5px ; padding: 20px 0; background: #f6f6f6;}
 
 	.video-container {
 		position: relative;

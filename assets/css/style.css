@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Style
  *
@@ -148,9 +149,40 @@
     /* 6 columns */ } }
 .startkit {
   padding: 40px 0 0; }
+  .startkit header .navbar  {
+    background: #ddd;
+    border: none;
+    padding: 20px 0; }
+  .startkit header .navbar-center .navbar-header {
+    float: none;
+    margin: 0 auto;
+    width: 200px;
+    text-align: center; }
+  .startkit header .navbar-center .navbar-brand {
+    float: none;
+    margin: 0 auto;
+    width: 200px;
+    text-align: center; }
+  .startkit header .navbar-center .navbar-nav {
+    clear: left;
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center; }
+  .startkit header .navbar-center .navbar-nav li {
+    float: none;
+    display: inline-block; }
   .startkit section {
     margin: 50px 0;
     position: relative; }
+  .startkit article {
+    margin: 50px 0;
+    position: relative; }
+  .startkit footer {
+    margin-top: 20px;
+    position: relative;
+    background: #ccc;
+    padding: 20px 0; }
   .startkit .page-header {
     padding: 75px 0;
     margin: 0; }
@@ -161,6 +193,9 @@
     margin-top: 150px;
     position: relative;
     display: block; }
+  .startkit .prefooter {
+    background: #eee;
+    padding: 20px 0; }
   .startkit .cover {
     min-height: 200px; }
   .startkit .cover-full {
@@ -175,6 +210,8 @@
     margin-bottom: 10px; }
   .startkit input {
     margin-bottom: 10px; }
+  .startkit .prefooter input {
+    margin-bottom: 0px; }
   .startkit .call2action-left {
     position: relative;
     display: block;
@@ -183,7 +220,7 @@
     padding: 0; }
   .startkit .call2action-left > div {
     height: 200px;
-    padding: 25px 0; }
+    padding: 25px; }
   .startkit .call2action-right {
     position: relative;
     display: block;
@@ -192,7 +229,7 @@
     padding: 0; }
   .startkit .call2action-right > div {
     height: 200px;
-    padding: 25px 0; }
+    padding: 25px; }
   .startkit .cover-left {
     width: 33%;
     position: absolute;
@@ -209,6 +246,25 @@
     width: 33%;
     position: absolute;
     right: 0; }
+  .startkit .price-table-title {
+    border-top: 2px solid #eee;
+    border-left: 2px solid #eee;
+    border-right: 2px solid #eee;
+    border-radius: 5px 5px 0 0;
+    padding: 20px 0;
+    background: #f6f6f6; }
+  .startkit .price-table-info {
+    border: 2px solid #eee;
+    border-radius: 0;
+    padding: 20px 0;
+    background: #f2f2f2; }
+  .startkit .price-table-price {
+    border-bottom: 2px solid #eee;
+    border-left: 2px solid #eee;
+    border-right: 2px solid #eee;
+    border-radius: 0 0 5px 5px;
+    padding: 20px 0;
+    background: #f6f6f6; }
   .startkit .video-container {
     position: relative;
     padding-bottom: 56.25%;
