@@ -20,11 +20,17 @@
   .bsg-header .navbar-toggle .icon-bar {
     background: #FFF; }
 
+.bsg-header .navbar-nav {
+  width: 100%; }
+
 .bsg-header .navbar-nav > li > a {
   padding: 5px 10px; }
 
 .bsg-header .navbar-nav > li > a:hover {
   background: none; }
+
+.bsg-header .navbar-nav > li:last-child {
+  float: right; }
 
 .bsg-nav {
   height: 100%;
@@ -148,11 +154,95 @@
     width: 50%;
     /* 6 columns */ } }
 .startkit {
-  padding: 40px 0 0; }
+  /* Sanitation */ }
+  .startkit body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px; }
+  .startkit h1, .startkit h2, .startkit h3, .startkit h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; }
+  .startkit body {
+    font-size: 1em;
+    line-height: 2em; }
+  .startkit h1 {
+    font-size: 4.125em;
+    line-height: 1.454545455em;
+    margin-top: 0.96969697em;
+    margin-bottom: 0.48484849em; }
+  .startkit h2 {
+    font-size: 2.5625em;
+    line-height: 1.56097561em;
+    margin-top: 1.56097561em;
+    margin-bottom: 0.78048781em; }
+  .startkit h3 {
+    font-size: 1.625em;
+    line-height: 1.230769231em;
+    margin-top: 1.23076923em;
+    margin-bottom: 1.23076923em; }
+  .startkit h4 {
+    font-size: 1em;
+    line-height: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em; }
+  .startkit p, .startkit ul, .startkit ol, .startkit pre, .startkit table, .startkit blockquote {
+    margin-top: 2em;
+    margin-bottom: 2em; }
+  .startkit hr {
+    border: 1px solid;
+    margin: -1px 0; }
+  .startkit ul ul, .startkit ol ol, .startkit ul ol, .startkit ol ul {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .startkit b, .startkit strong, .startkit em, .startkit small, .startkit code {
+    line-height: 1; }
+  .startkit sup, .startkit sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em; }
+  .startkit sub {
+    top: 0.4em; }
+  .startkit a {
+    color: #0050a3; }
+    .startkit a:hover {
+      color: #003770; }
+  .startkit .tab-pane > h1 {
+    padding-left: 20px; }
+  .startkit .color-primary {
+    color: #0050a3; }
+  .startkit .btn-primary {
+    background: #0050a3;
+    color: #fff; }
+    .startkit .btn-primary:hover {
+      background: #003770; }
+  .startkit .background-primary {
+    background: #003770;
+    color: #fff; }
+    .startkit .background-primary .btn-primary {
+      background: #fff;
+      color: #003770; }
+      .startkit .background-primary .btn-primary:hover {
+        background: #0050a3;
+        color: #fff; }
+  .startkit .form-control {
+    padding: 21px 15px; }
+  .startkit .well {
+    background: rgba(150, 169, 189, 0.5);
+    border-radius: 0;
+    border: none; }
+  .startkit .page-header {
+    color: #fff; }
+  .startkit .page-header.background-primary {
+    background: #96a9bd; }
+  .startkit .cover {
+    color: #fff; }
   .startkit header .navbar  {
-    background: #ddd;
+    background: #3f5164;
+    color: #fff;
     border: none;
-    padding: 20px 0; }
+    padding: 20px 0;
+    border-radius: 0;
+    margin-bottom: 0; }
   .startkit header .navbar-header {
     margin: 0 15px; }
   .startkit header .navbar-center .navbar-header {
@@ -172,11 +262,27 @@
   .startkit header .navbar-center .navbar-nav > li {
     float: none;
     display: inline-block; }
-  .startkit header .navbar-call2action .navbar-nav > li > .btn {
+  .startkit header .navbar-default .navbar-brand {
     color: #fff; }
+  .startkit header .navbar-default .navbar-nav > li > a {
+    color: #fff;
+    border-bottom: 1px solid transparent; }
+  .startkit header .navbar-default .navbar-nav > li > a:hover {
+    color: #fff; }
+  .startkit header .navbar-default .navbar-nav > .active > a {
+    background: none;
+    color: #fff;
+    border-bottom: 1px solid #fff; }
+  .startkit header .navbar-default .navbar-nav > .active > a:hover {
+    background: none;
+    color: #fff;
+    border-bottom: 1px solid #fff; }
+  .startkit header .navbar-call2action .navbar-nav > li > .btn {
+    color: #3f5164;
+    background: #fff; }
     .startkit header .navbar-call2action .navbar-nav > li > .btn:hover {
-      color: #fff;
-      background: #333; }
+      color: #003770;
+      background: #eee; }
   .startkit header .navbar-collapse-all .navbar-header {
     float: none;
     width: auto; }
@@ -227,21 +333,17 @@
     transition: all .25s ease-out; }
   .startkit .row-offcanvas-right {
     background: none;
-    right: 0; }
+    right: 0;
+    margin: 0; }
   .startkit .row-offcanvas-left {
     background: none;
     left: 0;
-    z-index: 0; }
-  .startkit .nav-tabs {
-    border: none; }
-  .startkit .nav-tabs > li > a {
-    border-radius: 0; }
-  .startkit .nav-tabs > li.active > a {
-    border: none; }
-  .startkit .nav-tabs > li.active > a:focus {
-    border: none; }
-  .startkit .nav-tabs > li.active > a:hover {
-    border: none; }
+    z-index: 0;
+    margin: 0; }
+  .startkit .sidebar-offcanvas {
+    background: #96a9bd; }
+  .startkit .content-canvas {
+    padding: 0; }
   @media (max-width: 767px) {
     .startkit .row-offcanvas-right .sidebar-offcanvas {
       right: -50%; }
@@ -269,14 +371,20 @@
       top: 0 !important;
       width: 25% !important;
       float: none !important; } }
+  .startkit .container {
+    margin: 0 5%;
+    width: auto; }
   .startkit section {
     margin: 50px 0;
-    position: relative; }
+    position: relative;
+    clear: both; }
   .startkit article {
     margin: 50px 0;
     position: relative; }
+  .startkit .prefooter {
+    margin-bottom: 0; }
   .startkit footer {
-    margin-top: 20px;
+    margin-top: 0px;
     position: relative;
     background: #ccc;
     padding: 20px 0; }
@@ -299,16 +407,41 @@
     min-height: 400px; }
   .startkit .solid-full {
     min-height: 400px; }
-  .startkit .background-primary {
-    background: #FFCCCC; }
   .startkit img {
-    max-width: 100%; }
+    max-width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em; }
   .startkit label {
-    margin-bottom: 10px; }
+    margin-bottom: 1em; }
   .startkit input {
-    margin-bottom: 10px; }
+    margin-bottom: 1em; }
   .startkit .prefooter input {
     margin-bottom: 0px; }
+  .startkit .nav-tabs {
+    border: none; }
+  .startkit .nav-tabs > li > a {
+    border-radius: 0;
+    border: none; }
+  .startkit .nav-tabs > li > a:hover {
+    background: none;
+    border: none; }
+  .startkit .nav-tabs > li.active > a {
+    border: none;
+    color: #3f5164; }
+  .startkit .nav-tabs > li.active > a:focus {
+    border: none; }
+  .startkit .nav-tabs > li.active > a:hover {
+    border: none;
+    background: none;
+    color: #3f5164; }
+  .startkit .panel {
+    border: none;
+    box-shadow: none; }
+  .startkit .panel-default > .panel-heading {
+    background: #3f5164;
+    color: #fff;
+    border-radius: 0;
+    border: none; }
   .startkit .call2action-left {
     position: relative;
     display: block;
@@ -316,7 +449,7 @@
     float: none;
     padding: 0; }
   .startkit .call2action-left > div {
-    height: 200px;
+    height: 250px;
     padding: 25px; }
   .startkit .call2action-right {
     position: relative;
@@ -325,24 +458,33 @@
     float: none;
     padding: 0; }
   .startkit .call2action-right > div {
-    height: 200px;
+    height: 250px;
     padding: 25px; }
   .startkit .cover-left {
-    width: 33%;
-    position: absolute;
-    left: 0; }
+    width: 100%; }
   .startkit .solid-left {
-    width: 33%;
-    position: absolute;
-    left: 0; }
+    width: 100%; }
   .startkit .cover-right {
-    width: 33%;
-    position: absolute;
-    right: 0; }
+    width: 100%; }
   .startkit .solid-right {
-    width: 33%;
-    position: absolute;
-    right: 0; }
+    width: 100%; }
+  @media (min-width: 768px) {
+    .startkit .cover-left {
+      width: 33%;
+      position: absolute;
+      left: 0; }
+    .startkit .solid-left {
+      width: 33%;
+      position: absolute;
+      left: 0; }
+    .startkit .cover-right {
+      width: 33%;
+      position: absolute;
+      right: 0; }
+    .startkit .solid-right {
+      width: 33%;
+      position: absolute;
+      right: 0; } }
   .startkit .price-table-title {
     border-top: 2px solid #eee;
     border-left: 2px solid #eee;
@@ -367,7 +509,9 @@
     padding-bottom: 56.25%;
     padding-top: 30px;
     height: 0;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-top: 2em;
+    margin-bottom: 2em; }
   .startkit .video-container iframe,
   .startkit .video-container object,
   .startkit .video-container embed {
@@ -381,7 +525,9 @@
     padding-bottom: 56.25%;
     padding-top: 30px;
     height: 0;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-top: 2em;
+    margin-bottom: 2em; }
   .startkit .map-container iframe,
   .startkit .map-container object,
   .startkit .map-container embed {

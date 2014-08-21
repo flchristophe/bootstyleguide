@@ -15,8 +15,10 @@
 	background: #FFF; 
 	}
 }
+.bsg-header .navbar-nav {width: 100%;}
 .bsg-header .navbar-nav>li>a {padding: 5px 10px;}
 .bsg-header .navbar-nav>li>a:hover {background: none;}
+.bsg-header .navbar-nav>li:last-child{float: right;}
 .bsg-nav {
 	height: 100%;
 	position: relative;
