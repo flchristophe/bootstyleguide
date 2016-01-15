@@ -1,0 +1,151 @@
+$font-primary: sans-serif;
+$font-secondary: sans-serif;
+
+$color-primary: #337ab7;
+$color-primary-light: lighten($color-primary, 8%);
+$color-primary-dark: darken($color-primary, 8%);
+$color-primary-darker: darken($color-primary, 12%);
+$color-primary-05: rgba($color-primary, 0.05);
+$color-primary-75: rgba($color-primary, 0.75);
+$color-primary-95: rgba($color-primary, 0.95);
+
+$color-secondary: #b77033;
+$color-secondary-dark: darken($color-secondary, 8%);
+$color-secondary-50: rgba($color-secondary, 0.50);
+$color-secondary-75: rgba($color-secondary, 0.75);
+
+$color-third: #b73338;
+$color-third-dark: darken($color-third, 8%);
+
+$color-fourth: #33b7b2;
+$color-fourth-dark: darken($color-fourth, 20%);
+
+$color-grey: #CCCCCC;
+$color-grey-lighter: lighten($color-grey, 12%);;
+$color-grey-light: lighten($color-grey, 8%);;
+$color-grey-dark: darken($color-grey, 8%);
+$color-grey-darker: darken($color-grey, 12%);
+
+$color-white: #FFFFFF;
+$color-white-05: rgba($color-white, 0.05);
+$color-white-10: rgba($color-white, 0.10);
+$color-white-20: rgba($color-white, 0.20);
+$color-white-50: rgba($color-white, 0.50);
+$color-white-80: rgba($color-white, 0.80);
+$color-white-95: rgba($color-white, 0.95);
+
+$color-black: #000000;
+$color-black-05: rgba($color-black, 0.05);
+$color-black-10: rgba($color-black, 0.10);
+$color-black-20: rgba($color-black, 0.20);
+$color-black-50: rgba($color-black, 0.50);
+$color-black-80: rgba($color-black, 0.80);
+$color-black-95: rgba($color-black, 0.95);
+
+$color-facebook: #3b5998;
+$color-facebook-dark: darken($color-facebook, 8%);
+$color-twitter: #4099FF;
+$color-twitter-dark: darken($color-twitter, 8%);
+$color-google: #d62d20;
+$color-google-dark: darken($color-google, 8%);
+
+
+$color-success: #5cb85c;
+$color-success-dark: darken($color-success, 8%);
+
+$color-info: #5bc0de;
+$color-info-dark: darken($color-info, 8%);
+
+$color-warning: #f0ad4e;
+$color-warning-dark: darken($color-warning, 8%);
+
+$color-danger: #d9534f;
+$color-danger-dark: darken($color-danger, 8%);
+
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+
+@mixin box-shadow($boxshadow){
+	-webkit-box-shadow: $boxshadow;
+	-moz-box-shadow: $boxshadow;
+	box-shadow: $boxshadow;
+}
+
+
+@mixin breakpoint($point) {
+	@if $point == xs {
+		@media (min-width: 420px) { @content; }
+	}
+	@if $point == small {
+		@media (min-width: 480px) { @content; }
+	}
+	@else if $point == medium {
+		@media (min-width: 620px) { @content; }
+	}
+	@else if $point == large {
+		@media (min-width: 930px)  { @content; }
+	}
+	@else if $point == xl {
+		@media (min-width: 1240px)  { @content; }
+	}
+	@else if $point == max-xs {
+		@media (max-width: 419px)  { @content; }
+	}
+	@else if $point == max-sm {
+		@media (max-width: 619px)  { @content; }
+	}
+}
+
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	$opacity-ie: $opacity * 100;
+	filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin rotate($degrees) {
+	-webkit-transform: rotate(#{$degrees}deg);
+	-moz-transform: rotate(#{$degrees}deg);
+	-ms-transform: rotate(#{$degrees}deg);
+	-o-transform: rotate(#{$degrees}deg);
+	transform: rotate(#{$degrees}deg);
+	filter:  progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)});
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)})";
+	zoom: 1;
+}
+
+@mixin cover($cover) {
+	-webkit-background-size: $cover;
+	-moz-background-size: $cover;
+	-o-background-size: $cover;
+	background-size: $cover;
+}
+
+@mixin box-sizing($type) {
+	-webkit-box-sizing: $type;
+	-moz-box-sizing: $type;
+	-o-box-sizing: $type;
+	-ms-box-sizing: $type;
+	box-sizing: $type;
+}
+
+@mixin transform($transforms-x, $transforms-y) {
+	-moz-transform: translate($transforms-x, $transforms-y);
+	-o-transform: translate($transforms-x, $transforms-y);
+	-ms-transform: translate($transforms-x, $transforms-y);
+	-webkit-transform: translate($transforms-x, $transforms-y);
+	transform: translate($transforms-x, $transforms-y);
+}
+
+@mixin placeholder($placeholder) {
+	&::placeholder { color: $placeholder};
+	&::-webkit-input-placeholder {color: $placeholder};
+	&::-moz-placeholder {color: $placeholder};
+	&:-moz-placeholder {color: $placeholder};
+	&:-ms-input-placeholder {color: $placeholder};
+}

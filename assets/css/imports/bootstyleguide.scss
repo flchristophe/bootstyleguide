@@ -24,10 +24,14 @@
 	position: relative;
 	top: 45px;
 	bottom: 0;
+	left: 0;
+	right: 0;
 	background: #333;
+
 	@media (min-width: 768px) {position: fixed;}
 	.bsg-list {
 		height: 100%;
+		width: 100%;
 		.bsg-element {
 			background: #eee; 
 			padding: 20px;
@@ -36,7 +40,7 @@
 			float: left;
 			text-align: center;
 			&:hover{background: #ddd;}
-			@media (min-width: 768px) {width: 20%;}
+			@media (min-width: 768px) {width: 33.33333332%;}
 			&.inactive {
 				background: #333;
 				&:hover {background: #333;}

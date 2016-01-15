@@ -1,0 +1,54 @@
+{% block content %}
+<div class="wrapper" itemscope itemtype="http://schema.org/WebPage">
+	{% include "persona/navigation" %}
+	<div class="content-persona">
+		<section class="page-header page-header-persona">
+			<div class="container">
+				<h1>Personas</h1>
+			</div>
+		</section>
+		<section class="persona-list">
+			<div class="container">
+				<div class="row">
+					<ul class="list-unstyled">
+						<li class="col-sm-3">
+							<a href="persona1">
+								<img src="http://placehold.it/400x400" alt="" class="img-responsive"/>
+								<div style="padding: 20px; background: #F5F5F5">
+									<p class="text-center">Nom</p>
+								</div>
+							</a>					
+						</li>
+						<li class="col-sm-3">
+							<a href="persona2">
+								<img src="http://placehold.it/400x400" alt="" class="img-responsive"/>
+								<div style="padding: 20px; background: #F5F5F5">
+									<p class="text-center">Nom</p>
+								</div>
+							</a>						
+						</li>
+						<li class="col-sm-3">
+							<a href="persona3">
+								<img src="http://placehold.it/400x400" alt="" class="img-responsive"/>
+								<div style="padding: 20px; background: #F5F5F5">
+									<p class="text-center">Nom</p>
+								</div>
+							</a>						
+						</li>
+						<li class="col-sm-3">
+							<a href="persona4">
+								<img src="http://placehold.it/400x400" alt="" class="img-responsive"/>
+								<div style="padding: 20px; background: #F5F5F5">
+									<p class="text-center">Nom</p>
+								</div>
+							</a>						
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</div>
+	<div class="push"></div>
+</div>
+{% include "layout/footer" %}
+{% endblock %}
